@@ -549,6 +549,98 @@ h1 {
   font-weight: 600;
 }
 
+/* ── Accordion ── */
+.accordion-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.83rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.accordion-btn:hover {
+  background: rgba(22, 117, 242, 0.06);
+  border-color: var(--primary);
+}
+
+.acc-arrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-btn[aria-expanded="true"] .acc-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.accordion-body.open {
+  max-height: 3000px;
+}
+
+/* ── Mission Notes ── */
+.mission-note {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.mission-note:first-child {
+  border-top: none;
+  padding-top: 0.75rem;
+}
+
+.mission-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.mission-note p {
+  margin: 0;
+  color: var(--subtext);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+/* ── Timestamp Button ── */
+.ts-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.28rem 0.75rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.ts-btn:hover {
+  background: var(--primary-light);
+  transform: scale(1.05);
+}
+
 /* ── Certs & Education ── */
 .cert-grid {
   display: grid;

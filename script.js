@@ -65,6 +65,27 @@ document.querySelectorAll('.proj-item .proj-thumb').forEach(thumb => {
   });
 });
 
+/* ── Accordion ── */
+document.querySelectorAll('.accordion-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    btn.nextElementSibling.classList.toggle('open', !expanded);
+  });
+});
+
+/* ── Timestamp buttons ── */
+document.querySelectorAll('.ts-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const videoId = btn.dataset.video;
+    const start = btn.dataset.start;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&start=${start}`;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
 function closeModal() {
   modal.classList.remove('open');
   iframe.src = '';
