@@ -55,8 +55,9 @@ const modal = document.getElementById('modal');
 const iframe = document.getElementById('modal-iframe');
 const closeBtn = document.getElementById('modal-close');
 
-document.querySelectorAll('.proj-card').forEach(card => {
-  card.addEventListener('click', () => {
+document.querySelectorAll('.proj-item .proj-thumb').forEach(thumb => {
+  thumb.addEventListener('click', () => {
+    const card = thumb.closest('.proj-item');
     const videoId = card.dataset.video;
     iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
     modal.classList.add('open');
