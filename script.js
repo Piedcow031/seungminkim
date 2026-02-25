@@ -1,3 +1,20 @@
+/* ── Dark Mode ── */
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon   = themeToggle.querySelector('.theme-icon');
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+applyTheme(localStorage.getItem('theme') || 'light');
+
+themeToggle.addEventListener('click', () => {
+  const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  localStorage.setItem('theme', next);
+});
+
 /* ── Typewriter ── */
 const TYPE_TEXT = '애니메이션 원작 퍼즐 게임의 월드맵을 설계하고,\n플레이어의 이야기를 만든 컨텐츠 기획자입니다.';
 const typeEl = document.querySelector('.typewriter');
