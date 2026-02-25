@@ -1,0 +1,75 @@
+/* ── Typewriter ── */
+const TYPE_TEXT = '애니메이션 원작 퍼즐 게임의 월드맵을 설계하고,\n플레이어의 이야기를 만든 컨텐츠 기획자입니다.';
+const typeEl = document.querySelector('.typewriter');
+let charIndex = 0;
+
+function type() {
+  if (charIndex < TYPE_TEXT.length) {
+    typeEl.innerHTML = TYPE_TEXT.slice(0, ++charIndex).replace(/\n/g, '<br>');
+    setTimeout(type, charIndex < 15 ? 70 : 32);
+  }
+}
+setTimeout(type, 600);
+
+/* ── Scroll Reveal ── */
+const revealEls = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObs.observe(el));
+
+/* ── Nav active state on scroll ── */
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+const sections = [...document.querySelectorAll('main section[id]')];
+
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const active = document.querySelector(`.nav a[href="#${entry.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+
+sections.forEach(s => navObs.observe(s));
+
+/* ── Career Tabs ── */
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = btn.closest('.tl-body');
+    body.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+    body.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+    btn.classList.add('active');
+    document.getElementById(`tab-${btn.dataset.tab}`).classList.remove('hidden');
+  });
+});
+
+/* ── Video Modal ── */
+const modal = document.getElementById('modal');
+const iframe = document.getElementById('modal-iframe');
+const closeBtn = document.getElementById('modal-close');
+
+document.querySelectorAll('.proj-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const videoId = card.dataset.video;
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeModal() {
+  modal.classList.remove('open');
+  iframe.src = '';
+  document.body.style.overflow = '';
+}
+
+closeBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
