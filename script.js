@@ -16,7 +16,7 @@ themeToggle.addEventListener('click', () => {
 });
 
 /* ── Typewriter ── */
-const TYPE_TEXT = '애니메이션 원작 퍼즐 게임의 월드맵을 설계하고,\n플레이어의 이야기를 만든 컨텐츠 기획자입니다.';
+const TYPE_TEXT = '애니메이션 IP의 세계관을 게임에 녹여내고\n플레이어의 이야기를 설계한 컨텐츠 기획자입니다.';
 const typeEl = document.querySelector('.typewriter');
 let charIndex = 0;
 
