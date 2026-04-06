@@ -1,20 +1,52 @@
 /* ============================================================
+   FONTS
+   ============================================================ */
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('fonts/NanumGothicLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('fonts/NanumGothic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('fonts/NanumGothicBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('fonts/NanumGothicExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================================
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --bg:        #F7F3EE;
-  --bg-warm:   #EDE8E0;
-  --bg-inset:  #E5DFD5;
+  --bg:        #F2F5F9;
+  --bg-warm:   #E8EDF5;
+  --bg-inset:  #DCE4EF;
 
-  --text:      #1A1612;
-  --text-mid:  #4A4540;
-  --text-dim:  #8C857C;
+  --text:      #111827;
+  --text-mid:  #374151;
+  --text-dim:  #6B7280;
 
-  --accent:    #B84A2E;
-  --accent-lt: #D4694A;
+  --accent:    #2563EB;
+  --accent-lt: #3B82F6;
 
-  --rule:       rgba(26,22,18,0.12);
-  --rule-heavy: rgba(26,22,18,0.35);
+  --rule:       rgba(17,24,39,0.12);
+  --rule-heavy: rgba(17,24,39,0.35);
 
   --fs-hero:  clamp(4rem, 10vw, 9rem);
   --fs-h1:    clamp(2.2rem, 5vw, 4rem);
@@ -23,8 +55,8 @@
   --fs-small: 0.8rem;
   --fs-mono:  0.75rem;
 
-  --font-display: 'Fraunces', Georgia, serif;
-  --font-body:    'Source Serif 4', Georgia, serif;
+  --font-display: 'NanumGothic', sans-serif;
+  --font-body:    'NanumGothic', sans-serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
 
   --section-gap: clamp(6rem, 12vw, 10rem);
@@ -162,7 +194,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem var(--page-pad);
-  background: rgba(247,243,238,0.92);
+  background: rgba(242,245,249,0.92);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid transparent;
@@ -254,14 +286,15 @@ img {
 .hero-title {
   font-family: var(--font-display);
   font-size: var(--fs-hero);
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.0;
   margin-bottom: 1.5rem;
   color: var(--text);
 }
 
 .hero-title em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 300;
   color: var(--accent);
 }
 
@@ -388,7 +421,7 @@ img {
 
 .dropcap::first-letter {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 5.5em;
   float: left;
   line-height: 0.78;
@@ -406,7 +439,7 @@ img {
 
 .pullquote p {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   line-height: 1.5;
   color: var(--text);
@@ -495,7 +528,7 @@ img {
 .tl-company {
   font-family: var(--font-display);
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 700;
   color: var(--text);
   margin-bottom: 0.3rem;
 }
@@ -619,6 +652,22 @@ img {
 .visual-btn:hover {
   background: var(--text);
   color: var(--bg);
+}
+
+/* YouTube embed */
+.video-embed {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
 }
 
 /* Worldmap SVG */
@@ -773,7 +822,7 @@ img {
 
 .panel-item--selected {
   color: var(--accent);
-  background: rgba(184,74,46,0.08);
+  background: rgba(37,99,235,0.08);
 }
 
 .editor-viewport {
@@ -842,13 +891,14 @@ img {
 .proj-title {
   font-family: var(--font-display);
   font-size: var(--fs-h1);
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.15;
   color: var(--text);
 }
 
 .proj-title em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 300;
   color: var(--accent);
 }
 
@@ -889,7 +939,7 @@ img {
 
 .design-intent p {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-mid);
@@ -1075,14 +1125,15 @@ img {
 .contact-headline {
   font-family: var(--font-display);
   font-size: var(--fs-h1);
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.2;
   color: var(--text);
   margin-bottom: 1.5rem;
 }
 
 .contact-headline em {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 300;
   color: var(--accent);
 }
 
@@ -1212,8 +1263,8 @@ img {
 
   .project-visual {
     position: relative;
-    height: 50vw;
-    min-height: 260px;
+    height: 56.25vw;
+    min-height: 300px;
     border-right: none;
     border-bottom: 1px solid var(--rule);
   }
