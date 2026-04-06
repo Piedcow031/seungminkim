@@ -1016,6 +1016,98 @@ img {
 }
 
 /* ============================================================
+   IMAGES
+   ============================================================ */
+.tl-logo {
+  height: 18px;
+  width: auto;
+  opacity: 0.55;
+  margin-bottom: 0.6rem;
+  display: block;
+  filter: grayscale(1);
+}
+
+.proj-worldmap {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.screenshot-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.screenshot-item img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.screenshot-caption {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.bear-portraits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.bear-portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.bear-portrait img {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--rule-heavy);
+}
+
+.bear-name {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.05em;
+}
+
+.bear-role {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.scene-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--rule);
+}
+
+/* ============================================================
    SKILLS
    ============================================================ */
 #skills {
