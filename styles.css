@@ -245,6 +245,23 @@ img {
   max-width: var(--wide-max);
   margin: 0 auto;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  min-width: 0;
+}
+
+.hero-photo {
+  width: 280px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 35% center;
+  display: block;
+  border-radius: 2px;
 }
 
 .hero-anim {
@@ -1019,11 +1036,12 @@ img {
    IMAGES
    ============================================================ */
 .tl-logo {
-  height: 18px;
+  height: 16px;
   width: auto;
-  opacity: 0.55;
-  margin-bottom: 0.6rem;
+  max-width: 100%;
+  opacity: 0.5;
   display: block;
+  margin-left: auto;
   filter: grayscale(1);
 }
 
@@ -1367,6 +1385,17 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-photo {
+    width: 140px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    order: -1;
+  }
+
   .nav-links {
     display: none;
   }
