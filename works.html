@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>작업물 -- 김승민</title>
+  <meta name="description" content="김승민의 작업물 상세 페이지">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Top nav -->
+<header id="nav" class="has-border">
+  <a href="index.html" class="nav-name">김승민</a>
+  <ul class="nav-links">
+    <li><a href="#wbb">WBB</a></li>
+    <li><a href="#unreal">쿼터뷰</a></li>
+    <li><a href="#farmquest">FarmQuest</a></li>
+    <li><a href="index.html#contact">연락</a></li>
+  </ul>
+</header>
+
+<!-- ============================================================
+     PROJECT 01: WE BARE BEARS THE PUZZLE
+     ============================================================ -->
+<section id="wbb" class="work-section">
+  <div class="section-inner wide">
+    <a href="index.html#projects" class="back-link">&larr; 작업물 목록</a>
+    <div class="chapter-header">
+      <span class="chapter-num">01 /</span>
+      <span class="chapter-label">We Bare Bears the Puzzle</span>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <div class="proj-subtitle">월드맵 기획 · 미션 연출 · 시나리오</div>
+          <p class="proj-body">위베어 베어스 IP를 기반으로 한 퍼즐 게임에서, 월드맵의 스토리 구조를 총괄했습니다. 단순한 텍스트 작성이 아닌, 게임플레이 동선과 서사가 하나의 흐름으로 연결되도록 설계하는 것이 핵심 과제였습니다.</p>
+          <p class="proj-body">미션 동선 설계: 악당을 추적하는 스토리에서 자연스럽게 맵을 순회하도록 미션을 배치했습니다. 플레이어가 이미 꾸며놓은 공간을 다시 경험하게 하면서, 이야기의 마무리와 공간적 완결감을 동시에 제공합니다.</p>
+          <p class="proj-body">재화 밸런스 고려: 탐문 미션을 늘리고 싶었으나, 재화를 소비해 진행하는 구조상 과도한 미션이 억지로 끌어가는 느낌을 줄 수 있어 과감히 하나로 압축했습니다.</p>
+          <div class="design-intent">
+            <div class="intent-label">디자인 의도</div>
+            <p>새로운 장소로 이동하기 전에 유저들이 꾸민 장소를 한 번 더 둘러보게 해주고, 악당과의 이야기를 마무리한다.</p>
+          </div>
+          <div class="mission-flow" aria-label="미션 순서">
+            <span class="flow-step">광장</span>
+            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+            <span class="flow-step">놀이터</span>
+            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+            <span class="flow-step">테니스장</span>
+            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+            <span class="flow-step">주차장</span>
+          </div>
+          <div class="proj-meta">
+            <div class="meta-item">
+              <span class="meta-label">플랫폼</span>
+              <span class="meta-value">모바일 (iOS / Android)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">엔진</span>
+              <span class="meta-value">Unity3D</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">주요 역할</span>
+              <span class="meta-value">시나리오, 미션 연출, 데이터 세팅</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">스크립팅</span>
+              <span class="meta-value">Lua</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-col-media">
+          <div class="video-embed-work">
+            <iframe src="https://www.youtube.com/embed/gOQyfDVSrdE" title="위베베 미션 연출 편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="visual-links">
+            <a href="https://youtu.be/_a41Ebx1kq4?si=C6lMuiblkDoUBswg" target="_blank" rel="noopener" class="visual-btn">무편집본 영상 &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Deep case: 놈놈 저택 -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">심층 케이스</span>
+        <h3 class="work-sub-title">놈놈 저택 -- 가방 되찾기 미션</h3>
+      </div>
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <p class="proj-body">한 파트의 미션 전체를 처음부터 끝까지 혼자 설계한 사례입니다. 시나리오 집필과 미션 연출을 모두 담당하며, 플레이어 동선, 감정 곡선, IP 세계관이라는 세 가지 제약을 동시에 만족시키는 구조를 찾아야 했습니다.</p>
+          <p class="proj-body">캐릭터 역할 분배: 판다가 재치를 발휘해 악당을 잡는 장면을 만들기 위해, 가장 강한 캐릭터인 아이스베어는 기습으로 무력화하고, 그리즐리는 쫓기는 상태로 설정해 서사적 공간을 확보했습니다.</p>
+          <div class="bear-portraits">
+            <div class="bear-portrait">
+              <img src="image/WBB/grizzly.png" alt="그리즐리">
+              <span class="bear-name">그리즐리</span>
+              <span class="bear-role">악당에게 쫓기는 상태</span>
+            </div>
+            <div class="bear-portrait">
+              <img src="image/WBB/icebear.jpg" alt="아이스베어">
+              <span class="bear-name">아이스베어</span>
+              <span class="bear-role">기습으로 무력화</span>
+            </div>
+            <div class="bear-portrait">
+              <img src="image/WBB/panda.jpg" alt="판다">
+              <span class="bear-name">판다</span>
+              <span class="bear-role">재치로 악당 검거</span>
+            </div>
+          </div>
+          <p class="proj-body">쿼터뷰 연출 적응: 원작에서 아이들이 악당 뒤를 몰래 지나가는 장면은 쿼터뷰로 그대로 재현하기 어려워, 순간이동 연출로 변형했습니다. 미디엄의 제약을 인식하고 대안을 찾는 것이 연출 기획의 핵심입니다.</p>
+          <div class="design-intent">
+            <div class="intent-label">디자인 의도</div>
+            <p>곰들이 직접 사람을 공격하는 것은 원작의 성격과 맞지 않는다. &#8594; 테니스공 발사기라는 도구를 활용한 간접 공격으로 해결.</p>
+          </div>
+          <img src="image/WBB/IMG_1808.PNG" alt="판다가 테니스공 발사기로 악당을 검거하는 장면" class="scene-screenshot">
+          <div class="proj-meta">
+            <div class="meta-item">
+              <span class="meta-label">역할</span>
+              <span class="meta-value">시나리오 + 연출 100%</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">핵심 스킬</span>
+              <span class="meta-value">IP 해석, 동선 설계, 장면 연출</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">영상 길이</span>
+              <span class="meta-value">약 4분 (무편집 전체)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">영역</span>
+              <span class="meta-value">놈놈 저택 3구역</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-col-media">
+          <div class="video-embed-work">
+            <iframe src="https://www.youtube.com/embed/_a41Ebx1kq4" title="놈놈 저택 가방 되찾기 무편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============================================================
+     PROJECT 02: UNREAL QUARTER-VIEW
+     ============================================================ -->
+<section id="unreal" class="work-section">
+  <div class="section-inner wide">
+    <div class="chapter-header">
+      <span class="chapter-num">02 /</span>
+      <span class="chapter-label">쿼터뷰 게임 -- 언리얼 습작</span>
+    </div>
+  </div>
+
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <div class="proj-subtitle">1인 개발 프로토타입 · 2024</div>
+          <p class="proj-body">회사를 떠난 후, 혼자 게임을 만들어보기로 했습니다. 도구를 배우기 위한 것이 아니라, 기획자가 개발 파이프라인 전체를 직접 경험해보기 위한 시도였습니다.</p>
+          <p class="proj-body">Unreal Engine 5의 Blueprint를 사용해 퀘스트 시스템의 기초를 구현했습니다. 캐릭터 이동, 인터랙션, 대화 시퀀스를 직접 연결하며, 코드 없이도 게임 로직을 구성하는 Blueprint의 가능성과 한계를 동시에 파악했습니다.</p>
+          <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달했고, 캐릭터 이미지는 DALL-E로 생성하고 Photoshop으로 가공했으며, 사운드는 Audacity로 편집했습니다.</p>
+          <div class="design-intent">
+            <div class="intent-label">디자인 의도</div>
+            <p>기획자로서 개발자가 마주하는 제약을 직접 이해하고, 협업 시 더 현실적인 기획을 할 수 있는 시야를 갖춘다.</p>
+          </div>
+          <div class="proj-meta">
+            <div class="meta-item">
+              <span class="meta-label">제작년도</span>
+              <span class="meta-value">2024</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">형태</span>
+              <span class="meta-value">1인 개발 프로토타입</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">엔진 / 스크립트</span>
+              <span class="meta-value">Unreal Engine 5 / Blueprint</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">도구</span>
+              <span class="meta-value">Blender, Photoshop CC, Audacity, DALL-E</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-col-media">
+          <div class="video-embed-work">
+            <iframe src="https://www.youtube.com/embed/B0Qq2cvjaoQ" title="쿼터뷰 게임 언리얼 습작 플레이 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Blueprint / Behavior Tree -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">구현 상세</span>
+        <h3 class="work-sub-title">Blueprint &amp; Behavior Tree</h3>
+      </div>
+      <p class="proj-body">Blueprint 비주얼 스크립팅으로 퀘스트 수락, NPC 대화, 아이템 수집 등의 게임 로직을 구현했습니다. Behavior Tree를 활용해 NPC의 행동 패턴(순찰, 추적, 공격)을 설계하고, Blackboard 데이터를 기반으로 상태 전환을 제어했습니다.</p>
+      <div class="image-placeholder-grid">
+        <div class="image-placeholder">
+          <span class="placeholder-text">Blueprint 스크린샷 (준비중)</span>
+        </div>
+        <div class="image-placeholder">
+          <span class="placeholder-text">Behavior Tree 스크린샷 (준비중)</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ============================================================
+     PROJECT 03: FARMQUEST
+     ============================================================ -->
+<section id="farmquest" class="work-section">
+  <div class="section-inner wide">
+    <div class="chapter-header">
+      <span class="chapter-num">03 /</span>
+      <span class="chapter-label">FarmQuest</span>
+    </div>
+  </div>
+
+  <!-- Overview -->
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <div class="proj-subtitle">퀘스트 시스템 습작 · 1인 개발 · 2026</div>
+          <p class="proj-body">AI 개발과 퀘스트 기획의 습작을 위해 만든 프로젝트입니다. 다양한 생성형 AI 툴을 활용하여 이미지, 사운드, 3D 모델, 코드 작성 등 전반적인 게임 개발 파이프라인을 실험하는 동시에, 퀘스트 시스템과 대화 시스템을 데이터 중심으로 구조화하고 설계하는 연습을 목적으로 합니다.</p>
+          <div class="design-intent">
+            <div class="intent-label">디자인 의도</div>
+            <p>기획자가 직접 개발 파이프라인 전체를 경험하고, 퀘스트 시스템을 데이터 중심으로 구조화하는 설계 역량을 기른다.</p>
+          </div>
+          <div class="proj-meta">
+            <div class="meta-item">
+              <span class="meta-label">제작년도</span>
+              <span class="meta-value">2026</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">형태</span>
+              <span class="meta-value">1인 개발 포트폴리오</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">엔진</span>
+              <span class="meta-value">Unity 6</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">AI 도구</span>
+              <span class="meta-value">GPT IMAGE, MeshyAI, Elevenlabs, CursorAI</span>
+            </div>
+          </div>
+          <div class="visual-links">
+            <a href="docs/FarmQuest_소개문서.pdf" target="_blank" rel="noopener" class="visual-btn">소개 문서 PDF &#8599;</a>
+          </div>
+        </div>
+        <div class="work-col-media">
+          <div class="video-embed-work">
+            <iframe src="https://www.youtube.com/embed/HkB8hlLZ9oE" title="FarmQuest 구현 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 사용 툴 -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">제작 환경</span>
+        <h3 class="work-sub-title">사용 툴</h3>
+      </div>
+      <div class="tool-grid">
+        <div class="tool-item">
+          <span class="tool-category">게임 엔진</span>
+          <span class="tool-name">Unity 6</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">이미지 생성</span>
+          <span class="tool-name">GPT IMAGE</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">이미지 편집</span>
+          <span class="tool-name">Adobe Photoshop</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">3D 모델 생성</span>
+          <span class="tool-name">MeshyAI</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">효과음 생성</span>
+          <span class="tool-name">Elevenlabs</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">효과음 편집</span>
+          <span class="tool-name">Audacity</span>
+        </div>
+        <div class="tool-item">
+          <span class="tool-category">코드 편집</span>
+          <span class="tool-name">CursorAI</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 데이터 구성: 퀘스트 -->
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">데이터 구성</span>
+        <h3 class="work-sub-title">퀘스트 데이터</h3>
+      </div>
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <p class="proj-body">퀘스트 데이터를 JSON으로 구조화해 기획과 구현을 분리했습니다. 퀘스트 ID, NPC 참조, 시작 조건, 목표 단계, 보상까지 모든 정보를 데이터로 관리합니다.</p>
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr><th>필드</th><th>타입</th><th>설명</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>id</td><td>string</td><td>퀘스트 고유 ID</td></tr>
+                <tr><td>titleId</td><td>string</td><td>로케일 시스템 참조 제목 ID</td></tr>
+                <tr><td>providingNPCId</td><td>string</td><td>퀘스트를 제공하는 NPC ID</td></tr>
+                <tr><td>completionNPCId</td><td>string</td><td>퀘스트 완료를 처리하는 NPC ID</td></tr>
+                <tr><td>startConditions</td><td>array</td><td>퀘스트 시작 조건 목록</td></tr>
+                <tr><td>objectives</td><td>array</td><td>퀘스트의 목표 단계 리스트</td></tr>
+                <tr><td>rewards</td><td>array</td><td>퀘스트 완료 보상 목록</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="proj-body">startConditions로 선행 퀘스트 완료, 플래그 값 검사, 아이템 보유 여부 등 복수의 조건을 설정할 수 있습니다. objectives는 순차적으로 진행되며, 지역 도달(EnterArea), 대화 완료(CompleteDialogue), 적 처치(DefeatEnemies), 아이템 수집(CollectItems) 네 가지 타입을 지원합니다.</p>
+        </div>
+        <div class="work-col-media">
+          <div class="code-block">
+<pre>{
+  "id": "quest_potatostew_01",
+  "titleId": "Quest_title_potatostew",
+  "providingNPCId": "npc_roy",
+  "completionNPCId": "npc_roy",
+  "startConditions": [],
+  "startDialogueId": "conv_potatostew_01",
+  "completionDialogueId": "conv_potatostew_05",
+  "objectives": [ ... ],
+  "rewards": [
+    { "itemId": "Item_0001", "amount": 100 },
+    { "itemId": "Item_0002", "amount": 100 }
+  ]
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 데이터 구성: 대화 -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">데이터 구성</span>
+        <h3 class="work-sub-title">대화 데이터</h3>
+      </div>
+      <div class="work-two-col">
+        <div class="work-col-text">
+          <p class="proj-body">캐릭터 간의 텍스트 대화를 데이터로 제어합니다. 캐릭터 이름, 초상화(감정), 음성, 애니메이션 연출을 각 대사 라인별로 설정할 수 있으며, 대화 종료 시 플래그 변경을 통해 스토리와 퀘스트 진행을 제어합니다.</p>
+          <div class="data-table">
+            <table>
+              <thead>
+                <tr><th>필드</th><th>타입</th><th>설명</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>textId</td><td>string</td><td>텍스트 대사 로케일 ID</td></tr>
+                <tr><td>characterId</td><td>string</td><td>대사를 하는 캐릭터 ID</td></tr>
+                <tr><td>animation</td><td>string</td><td>캐릭터 애니메이션</td></tr>
+                <tr><td>expression</td><td>string</td><td>캐릭터 초상화 ID</td></tr>
+                <tr><td>voice</td><td>string</td><td>캐릭터 음성 ID</td></tr>
+                <tr><td>flagActions</td><td>array</td><td>대화 종료 후 변경할 플래그</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="proj-body">flagActions는 네 가지 액션 타입을 지원합니다: 플래그 설정(0), 값 증가(1), 플래그 토글(2), 플래그 제거(3). 이를 통해 대화만으로도 퀘스트 상태 전환, NPC 행동 변화 등을 유연하게 제어할 수 있습니다.</p>
+        </div>
+        <div class="work-col-media">
+          <div class="code-block">
+<pre>{
+  "id": "conv_roy_default",
+  "lines": [
+    {
+      "characterId": "npc_roy",
+      "expression": "idle",
+      "textId": "dlg_roy_default_dlg_01",
+      "voice": "talk",
+      "animation": "Talk_1",
+      "flagActions": [
+        {
+          "type": 0,
+          "key": "potatostew_phase",
+          "value": 7
+        }
+      ]
+    }
+  ]
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 퀘스트 구성: 개요 -->
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">퀘스트 구성</span>
+        <h3 class="work-sub-title">진 할머니의 감자스튜 레시피</h3>
+      </div>
+      <div class="data-table">
+        <table>
+          <tbody>
+            <tr><td>퀘스트 제목</td><td>진 할머니의 감자스튜 레시피</td><td>퀘스트 타입</td><td>서브 퀘스트</td></tr>
+            <tr><td>퀘스트 ID</td><td>quest_potatostew_01</td><td>진행 장소</td><td>브룩밀 마을</td></tr>
+            <tr><td>의뢰 NPC</td><td>로이 (npc_roy)</td><td>관련 NPC</td><td>로이, 마르타</td></tr>
+            <tr><td>시작 조건</td><td>없음</td><td>권장 레벨</td><td>제한 없음</td></tr>
+            <tr><td>보상</td><td>경험치 100, 골드 100</td><td>반복</td><td>불가</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="design-intent" style="margin-top: 1.5rem;">
+        <div class="intent-label">배경 줄거리</div>
+        <p>로이는 마을 축제에 전설로 내려오는 진 할머니의 레시피를 이용해 마을주민들에게 깜짝선물을 하고자 한다. 하지만 레시피를 모르는 로이는 주인공에게 자기 대신 레시피를 알아와달라고 하는데...</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 퀘스트 구성: 캐릭터 -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">퀘스트 구성</span>
+        <h3 class="work-sub-title">캐릭터</h3>
+      </div>
+      <div class="character-grid">
+        <div class="character-card">
+          <h4 class="character-name">로이 <span class="character-id">npc_roy</span></h4>
+          <span class="character-role">퀘스트 의뢰자</span>
+          <div class="character-info">
+            <div><span class="meta-label">나이 / 성별</span> 38세 / 남자</div>
+            <div><span class="meta-label">직업</span> 물레방앗간 일꾼</div>
+            <div><span class="meta-label">위치</span> 브룩밀 마을 / 물레방앗간</div>
+            <div><span class="meta-label">성격</span> 돈에 집착하는 기회주의자. 자기합리화에 능하고 말수가 적다.</div>
+          </div>
+          <p class="character-bio">브룩밀 마을에 정착한 지 얼마 되지 않은 외지인. 과거부터 단기 성과에 집착하는 무리한 사업을 반복해 왔고, 그때마다 주변의 신뢰를 잃었다.</p>
+        </div>
+        <div class="character-card">
+          <h4 class="character-name">마르타 <span class="character-id">npc_marta</span></h4>
+          <span class="character-role">정보 제공자</span>
+          <div class="character-info">
+            <div><span class="meta-label">나이 / 성별</span> 19세 / 여자</div>
+            <div><span class="meta-label">직업</span> 농부</div>
+            <div><span class="meta-label">위치</span> 브룩밀 마을 / 마르타의 집</div>
+            <div><span class="meta-label">성격</span> 밝고 친절하지만, 강단 있고 올곧은 심성.</div>
+          </div>
+          <p class="character-bio">진 할머니의 손녀. 기근을 겪으면서도 타인을 도운 할머니의 모습을 곁에서 보며 자라, 자연스럽게 온화하고 배려 깊은 성품을 갖게 되었다.</p>
+        </div>
+        <div class="character-card">
+          <h4 class="character-name">진 할머니</h4>
+          <span class="character-role">정보 제공자 (사망)</span>
+          <div class="character-info">
+            <div><span class="meta-label">나이 / 성별</span> 73세 / 여자</div>
+            <div><span class="meta-label">직업</span> 농부</div>
+            <div><span class="meta-label">관계</span> 마르타 (손녀)</div>
+            <div><span class="meta-label">성격</span> 온화하고 이웃을 먼저 생각하는 따뜻한 성품.</div>
+          </div>
+          <p class="character-bio">현 시점에서는 고인. 생전에는 작은 감자밭을 돌보며 살아가던 평범한 농부였다. 마을에 기근이 생기자 자신의 감자를 이웃에게 베풀어서 마을 사람들의 존경을 받았다.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 퀘스트 구성: 흐름도 -->
+  <article class="work-block">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">퀘스트 구성</span>
+        <h3 class="work-sub-title">흐름도</h3>
+      </div>
+      <div class="quest-flow">
+        <div class="quest-flow-column">
+          <div class="quest-flow-header">quest_potatostew_01 -- 진 할머니의 감자스튜 레시피</div>
+          <div class="quest-flow-item quest-flow-item--start">
+            <span class="flow-phase">퀘스트 시작</span>
+            <p>로이는 마을 축제에 마을 사람들에게 진 할머니의 감자스튜를 대접하기 위해 레시피를 알아봐달라고 부탁한다.</p>
+          </div>
+          <div class="quest-flow-item">
+            <span class="flow-phase">1. 마르타에게 문의</span>
+            <p>마르타에게 레시피를 문의하자, 레시피를 알아보는 동안 감자밭의 잡초 제거를 부탁한다.</p>
+          </div>
+          <div class="quest-flow-item">
+            <span class="flow-phase">2. 잡초 제거</span>
+            <p>마르타의 밭으로 이동하여 모든 잡초를 제거한다.</p>
+          </div>
+          <div class="quest-flow-item">
+            <span class="flow-phase">3. 레시피 수령</span>
+            <p>마르타의 집으로 돌아와 진 할머니의 감자스튜 레시피를 전달 받는다.</p>
+          </div>
+          <div class="quest-flow-item quest-flow-item--end">
+            <span class="flow-phase">레시피 전달</span>
+            <p>레시피를 전달하자 로이는 본색을 드러내고 이를 장사에 쓸 것이라고 밝히고, 주인공에게 보수를 준다.</p>
+          </div>
+        </div>
+        <div class="quest-flow-column">
+          <div class="quest-flow-header">quest_potatostew_02 -- 마르타의 추억</div>
+          <div class="quest-flow-item quest-flow-item--start">
+            <span class="flow-phase">로이의 기만</span>
+            <p>로이는 보수를 지급했으니 신경쓰지말고 가라고 한다. 이에 마르타에게 이 사실을 알리러 간다.</p>
+          </div>
+          <div class="quest-flow-item">
+            <span class="flow-phase">1. 마르타에게 사실을 알리기</span>
+            <p>마르타에게 사실을 알리자, 마르타는 웃으며 그 레시피는 기근에 허덕일 때 나눠먹던 엉망진창 레시피였다는 것을 알려준다.</p>
+          </div>
+          <div class="quest-flow-item quest-flow-item--end">
+            <span class="flow-phase">퀘스트 완료</span>
+            <p>마르타는 간만에 할머니에 대해서 추억할 수 있어서 고맙다고 감사의 인사를 전한다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 퀘스트 구성: 페이즈 -->
+  <article class="work-block work-block--alt">
+    <div class="section-inner wide">
+      <div class="work-sub-header">
+        <span class="work-sub-label">퀘스트 구성</span>
+        <h3 class="work-sub-title">페이즈 구성</h3>
+      </div>
+      <div class="phase-flow">
+        <div class="phase-card">
+          <div class="phase-num">PHASE 1</div>
+          <div class="phase-title">마르타 찾기</div>
+          <div class="phase-desc">마르타에게 레시피를 물어보자.</div>
+          <div class="phase-condition">성공조건: 마르타와 대화</div>
+        </div>
+        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 2</div>
+          <div class="phase-title">밭으로 이동</div>
+          <div class="phase-desc">마르타의 밭을 찾기.</div>
+          <div class="phase-condition">성공조건: 마르타의 밭에 진입</div>
+        </div>
+        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 3</div>
+          <div class="phase-title">잡초 제거</div>
+          <div class="phase-desc">밭에서 잡초를 뽑기.</div>
+          <div class="phase-condition">성공조건: 잡초(Item_0003) 4개 수집</div>
+        </div>
+        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 4</div>
+          <div class="phase-title">마르타와 대화</div>
+          <div class="phase-desc">마르타에게 돌아가기.</div>
+          <div class="phase-condition">성공조건: 마르타와 대화</div>
+        </div>
+        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 5</div>
+          <div class="phase-title">레시피 전달</div>
+          <div class="phase-desc">로이에게 레시피를 전달.</div>
+          <div class="phase-condition">성공조건: 로이와 대화</div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <span>김승민 -- 컨텐츠 기획자 · Quest Designer</span>
+  <span>&#169; 2026 Seungmin Kim</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
