@@ -565,6 +565,49 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.tl-duties {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.tl-duty-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.tl-duty-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tl-duty-list li {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.tl-duty-list li::before {
+  content: "--";
+  position: absolute;
+  left: 0;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
 .tl-desc {
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -908,11 +951,30 @@ img {
   transition: border-color 0.2s, transform 0.2s;
   text-decoration: none;
   color: inherit;
+  overflow: hidden;
 }
 
 .project-card:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
+}
+
+.card-thumb {
+  margin: -2rem -2rem 0 -2rem;
+  aspect-ratio: 16 / 9;
+  background: var(--rule);
+  overflow: hidden;
+}
+
+.card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-thumb img[src=""] {
+  display: none;
 }
 
 .card-num {
@@ -1205,7 +1267,7 @@ img {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-bottom: 4rem;
 }
