@@ -1951,10 +1951,9 @@ img {
     display: none;
   }
 
-  /* for right-side items: dot col 1, content col 2 */
+  /* for right-side items: hide logo, dot col 1, content col 2 */
   .tl-item .tl-left {
-    padding-right: 0;
-    text-align: left;
+    display: none;
   }
 
   .tl-item .tl-right {
