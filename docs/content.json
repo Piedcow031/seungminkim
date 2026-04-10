@@ -81,8 +81,7 @@
           { "label": "스크립팅", "value": "Lua" }
         ],
         "links": [
-          { "label": "편집본 영상", "url": "https://youtu.be/gOQyfDVSrdE?si=ylAQNaSHu1CGkwoC" },
-          { "label": "무편집본 영상", "url": "https://youtu.be/_a41Ebx1kq4?si=C6lMuiblkDoUBswg" }
+          { "label": "편집본 영상", "url": "https://youtu.be/gOQyfDVSrdE?si=ylAQNaSHu1CGkwoC" }
         ],
         "visual": {
           "type": "worldmap_diagram",
