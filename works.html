@@ -69,33 +69,44 @@
           <div class="video-embed-work">
             <iframe src="https://www.youtube.com/embed/gOQyfDVSrdE" title="위베베 미션 연출 편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div class="visual-links">
-            <a href="https://youtu.be/_a41Ebx1kq4?si=C6lMuiblkDoUBswg" target="_blank" rel="noopener" class="visual-btn">무편집본 영상 &#8599;</a>
-          </div>
         </div>
       </div>
 
       <!-- 동선 맵 -->
-      <div class="map-overlay-container" style="margin-top:2rem;">
-        <img src="image/WBB/wbbmap.png" alt="놈놈 저택 월드맵 - 미션 동선: 광장 > 놀이터 > 테니스장 > 주차장" class="wbb-map">
-        <svg class="map-svg" viewBox="0 0 4334 2222" preserveAspectRatio="none" aria-hidden="true">
-          <defs>
-            <marker id="wbb-arrow" markerUnits="userSpaceOnUse" markerWidth="90" markerHeight="64" refX="85" refY="32" orient="auto">
-              <polygon points="0 0, 90 32, 0 64" fill="#2563EB"/>
-            </marker>
-          </defs>
-          <!-- 1: 광장 -> 놀이터 -->
-          <line x1="2500" y1="680" x2="3240" y2="1060" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
-          <!-- 2: 놀이터 -> 테니스장 -->
-          <line x1="3330" y1="1160" x2="1700" y2="1640" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
-          <!-- 3: 테니스장 -> 주차장 -->
-          <line x1="1440" y1="1670" x2="610" y2="1090" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
-        </svg>
-        <div class="map-label" style="left:54%;top:21%"><span class="map-label-num">1</span>광장</div>
-        <div class="map-label" style="left:79%;top:43%"><span class="map-label-num">2</span>놀이터</div>
-        <div class="map-label" style="left:34%;top:69%"><span class="map-label-num">3</span>테니스장</div>
-        <div class="map-label" style="left:10%;top:40%"><span class="map-label-num">4</span>주차장</div>
-      </div>
+      <svg class="wbb-map-svg" viewBox="0 0 4334 2222" style="margin-top:2rem;" role="img" aria-label="놈놈 저택 월드맵 - 미션 동선: 광장 > 놀이터 > 테니스장 > 주차장">
+        <image href="image/WBB/wbbmap.png" x="0" y="0" width="4334" height="2222"/>
+        <defs>
+          <marker id="wbb-arrow" markerUnits="userSpaceOnUse" markerWidth="100" markerHeight="70" refX="95" refY="35" orient="auto">
+            <polygon points="0 0, 100 35, 0 70" fill="#2563EB"/>
+          </marker>
+        </defs>
+        <!-- 1: 광장 -> 놀이터 -->
+        <line x1="2480" y1="680" x2="3340" y2="1030" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <!-- 2: 놀이터 -> 테니스장 -->
+        <line x1="3430" y1="1110" x2="2260" y2="1590" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <!-- 3: 테니스장 -> 주차장 -->
+        <line x1="2060" y1="1620" x2="700" y2="960" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <!-- 1 광장 -->
+        <circle cx="2350" cy="650" r="60" fill="#2563EB"/>
+        <text x="2350" y="650" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
+        <rect x="2420" y="618" width="260" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
+        <text x="2550" y="650" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">광장</text>
+        <!-- 2 놀이터 -->
+        <circle cx="3490" cy="1080" r="60" fill="#2563EB"/>
+        <text x="3490" y="1080" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
+        <rect x="3560" y="1048" width="340" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
+        <text x="3730" y="1080" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">놀이터</text>
+        <!-- 3 테니스장 -->
+        <circle cx="2120" cy="1640" r="60" fill="#2563EB"/>
+        <text x="2120" y="1640" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
+        <rect x="2190" y="1608" width="430" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
+        <text x="2405" y="1640" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">테니스장</text>
+        <!-- 4 주차장 -->
+        <circle cx="600" cy="930" r="60" fill="#2563EB"/>
+        <text x="600" y="930" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
+        <rect x="670" y="898" width="330" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
+        <text x="835" y="930" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">주차장</text>
+      </svg>
 
       <!-- 심층 케이스 -->
       <div class="work-sub-header" style="margin-top: 3rem;">
@@ -123,21 +134,23 @@
               <span class="bear-role">재치로 악당 검거</span>
             </div>
           </div>
-          <img src="image/WBB/ambush.gif" alt="아이스베어 기습 무력화 - 인게임 장면" class="scene-gif">
-          <p class="proj-body">쿼터뷰 연출 적응: 원작의 해당 장면을 쿼터뷰로 직접 재현하기 어려워 순간이동 연출로 변형. 미디엄 제약 인식 후 대안 연출 적용.</p>
-          <figure class="scene-ref">
-            <img src="image/WBB/ambush.webp" alt="원작 참고 장면">
-            <figcaption>원작 장면 참고</figcaption>
-          </figure>
-          <div class="design-intent">
-            <div class="intent-label">디자인 의도</div>
-            <p>곰들이 직접 사람을 공격하는 것은 원작의 성격과 맞지 않는다. &#8594; 테니스공 발사기라는 도구를 활용한 간접 공격으로 해결.</p>
+          <p class="proj-body">쿼터뷰 연출 적응: 원작의 기습 장면은 쿼터뷰에서 직접 표현이 어려워, 순간이동 연출로 변형하여 적용.</p>
+          <div class="scene-compare">
+            <figure>
+              <img src="image/WBB/ambush.gif" alt="아이스베어 기습 무력화 - 인게임 장면">
+              <figcaption>인게임 장면</figcaption>
+            </figure>
+            <figure>
+              <img src="image/WBB/ambush.webp" alt="원작 참고 장면">
+              <figcaption>원작 장면 참고</figcaption>
+            </figure>
           </div>
+          <p class="proj-body">원작에서는 아이들이 범인을 붙잡으나, 게임에서는 주인공이 직접 잡는 것이 클라이맥스에 맞다고 생각하여 각색. 하지만 곰들이 직접 사람을 공격하는 것은 원작의 성격과 맞지 않아, 테니스공 발사기라는 도구를 활용한 간접 공격 연출로 대체.</p>
           <img src="image/WBB/tenisball.gif" alt="판다가 테니스공 발사기로 악당을 검거하는 장면" class="scene-gif">
           <div class="proj-meta">
             <div class="meta-item">
               <span class="meta-label">역할</span>
-              <span class="meta-value">시나리오 + 연출 100%</span>
+              <span class="meta-value">시나리오 + 연출</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">핵심 스킬</span>
@@ -181,7 +194,7 @@
         <div class="work-col-text">
           <div class="proj-subtitle">Unbound · 1인 개발 프로토타입 · 2024</div>
           <p class="proj-body">UE5 Blueprint를 활용한 쿼터뷰 1인 개발 프로토타입. 캐릭터 이동, NPC 인터랙션, 대화 시퀀스, 퀘스트 수락 등 게임 로직 전반을 Blueprint로 구현.</p>
-          <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달. 캐릭터 이미지는 DALL-E 생성 후 Photoshop 가공, 사운드는 Audacity 편집.</p>
+          <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달. 캐릭터 이미지는 GPT IMAGE 생성 후 Photoshop 가공, 사운드는 Audacity 편집.</p>
           <div class="proj-meta">
             <div class="meta-item">
               <span class="meta-label">제작년도</span>
@@ -189,7 +202,7 @@
             </div>
             <div class="meta-item">
               <span class="meta-label">형태</span>
-              <span class="meta-value">1인 개발 프로토타입</span>
+              <span class="meta-value">프로토타입</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">엔진 / 스크립트</span>
@@ -197,7 +210,7 @@
             </div>
             <div class="meta-item">
               <span class="meta-label">도구</span>
-              <span class="meta-value">Blender, Photoshop CC, Audacity, DALL-E</span>
+              <span class="meta-value">Blender, Photoshop CC, Audacity, GPT IMAGE</span>
             </div>
           </div>
         </div>
@@ -248,27 +261,6 @@
         <div class="work-col-text">
           <div class="proj-subtitle">퀘스트 시스템 습작 · 1인 개발 · 2026</div>
           <p class="proj-body">생성형 AI 툴을 활용한 게임 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작. 이미지, 사운드, 3D 모델, 코드 작업 전반에 AI 툴 적용.</p>
-          <div class="proj-meta">
-            <div class="meta-item">
-              <span class="meta-label">제작년도</span>
-              <span class="meta-value">2026</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">형태</span>
-              <span class="meta-value">1인 개발 포트폴리오</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">엔진</span>
-              <span class="meta-value">Unity 6</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">AI 도구</span>
-              <span class="meta-value">GPT IMAGE, MeshyAI, Elevenlabs, CursorAI</span>
-            </div>
-          </div>
-          <div class="visual-links">
-            <a href="docs/FarmQuest_소개문서.pdf" target="_blank" rel="noopener" class="visual-btn">소개 문서 PDF &#8599;</a>
-          </div>
         </div>
         <div class="work-col-media">
           <div class="video-embed-work">
@@ -276,45 +268,25 @@
           </div>
         </div>
       </div>
-    </div>
-  </article>
-
-  <!-- 사용 툴 -->
-  <article class="work-block work-block--alt">
-    <div class="section-inner wide">
-      <div class="work-sub-header">
-        <span class="work-sub-label">제작 환경</span>
-        <h3 class="work-sub-title">사용 툴</h3>
+      <div class="proj-meta proj-meta--below-fold">
+        <div class="meta-item">
+          <span class="meta-label">제작년도</span>
+          <span class="meta-value">2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">형태</span>
+          <span class="meta-value">프로토타입</span>
+        </div>
+        <div class="meta-item meta-item--full-row">
+          <span class="meta-label">사용 툴</span>
+          <p class="meta-value meta-tools-text">Unity 6 · GPT IMAGE · Adobe Photoshop · MeshyAI · Elevenlabs · Audacity · CursorAI</p>
+        </div>
       </div>
-      <div class="tool-grid">
-        <div class="tool-item">
-          <span class="tool-category">게임 엔진</span>
-          <span class="tool-name">Unity 6</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">이미지 생성</span>
-          <span class="tool-name">GPT IMAGE</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">이미지 편집</span>
-          <span class="tool-name">Adobe Photoshop</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">3D 모델 생성</span>
-          <span class="tool-name">MeshyAI</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">효과음 생성</span>
-          <span class="tool-name">Elevenlabs</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">효과음 편집</span>
-          <span class="tool-name">Audacity</span>
-        </div>
-        <div class="tool-item">
-          <span class="tool-category">코드 편집</span>
-          <span class="tool-name">CursorAI</span>
-        </div>
+      <div class="visual-links visual-links--after-meta">
+        <a href="docs/FarmQuest_소개문서.pdf" target="_blank" rel="noopener" download class="visual-btn visual-btn--download">
+          <img src="image/pdf.png" alt="" class="visual-btn__icon" width="20" height="20">
+          <span>소개 문서</span>
+        </a>
       </div>
     </div>
   </article>
@@ -473,52 +445,6 @@
   ]
 }</pre>
           </div>
-        </div>
-      </div>
-    </div>
-  </article>
-
-  <!-- 퀘스트 구성: 페이즈 -->
-  <article class="work-block work-block--alt">
-    <div class="section-inner wide">
-      <div class="work-sub-header">
-        <span class="work-sub-label">퀘스트 구성</span>
-        <h3 class="work-sub-title">페이즈 구성</h3>
-      </div>
-      <div class="phase-flow">
-        <div class="phase-card">
-          <div class="phase-num">PHASE 1</div>
-          <div class="phase-title">마르타 찾기</div>
-          <div class="phase-desc">마르타에게 레시피를 물어보자.</div>
-          <div class="phase-condition">성공조건: 마르타와 대화</div>
-        </div>
-        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-        <div class="phase-card">
-          <div class="phase-num">PHASE 2</div>
-          <div class="phase-title">밭으로 이동</div>
-          <div class="phase-desc">마르타의 밭을 찾기.</div>
-          <div class="phase-condition">성공조건: 마르타의 밭에 진입</div>
-        </div>
-        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-        <div class="phase-card">
-          <div class="phase-num">PHASE 3</div>
-          <div class="phase-title">잡초 제거</div>
-          <div class="phase-desc">밭에서 잡초를 뽑기.</div>
-          <div class="phase-condition">성공조건: 잡초(Item_0003) 4개 수집</div>
-        </div>
-        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-        <div class="phase-card">
-          <div class="phase-num">PHASE 4</div>
-          <div class="phase-title">마르타와 대화</div>
-          <div class="phase-desc">마르타에게 돌아가기.</div>
-          <div class="phase-condition">성공조건: 마르타와 대화</div>
-        </div>
-        <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-        <div class="phase-card">
-          <div class="phase-num">PHASE 5</div>
-          <div class="phase-title">레시피 전달</div>
-          <div class="phase-desc">로이에게 레시피를 전달.</div>
-          <div class="phase-condition">성공조건: 로이와 대화</div>
         </div>
       </div>
     </div>
