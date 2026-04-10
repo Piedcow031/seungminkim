@@ -599,13 +599,17 @@ img {
   position: relative;
 }
 
-.tl-duty-list li::before {
-  content: "-";
+.tl-duty-list li::before,
+.skill-group li::before {
+  content: "";
   position: absolute;
-  left: 0;
-  color: var(--text-dim);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  left: 0.15rem;
+  top: 0.62em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.9;
 }
 
 .tl-desc {
@@ -1373,6 +1377,9 @@ img {
   font-family: var(--font-body);
   font-size: 0.875rem;
   color: var(--text-mid);
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1rem;
   transition: color 0.2s;
 }
 
