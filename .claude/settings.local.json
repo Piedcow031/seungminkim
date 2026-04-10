@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx --version)"
+      "Bash(npx --version)",
+      "Bash(identify /Users/ksm/Documents/GitHub/seungminkim/image/wbb/tenisball.gif)",
+      "Bash(ls -lh /Users/ksm/Documents/GitHub/seungminkim/image/wbb/*.gif /Users/ksm/Documents/GitHub/seungminkim/image/wbb/*.webp)",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/Users/ksm/Documents/GitHub/seungminkim/image/wbb/wbbmap.png'\\); print\\(img.size\\)\")",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/ksm/Documents/GitHub/seungminkim/image/wbb/wbbmap.png)"
     ]
   }
 }
