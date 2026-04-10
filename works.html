@@ -40,20 +40,11 @@
       <!-- 영상 + 메타 -->
       <div class="work-two-col" style="margin-top: 1.5rem;">
         <div class="work-col-text">
-          <p class="proj-body">위베어 베어스 IP를 기반으로 한 퍼즐 게임에서, 월드맵의 스토리 구조를 총괄했습니다. 단순한 텍스트 작성이 아닌, 게임플레이 동선과 서사가 하나의 흐름으로 연결되도록 설계하는 것이 핵심 과제였습니다.</p>
-          <p class="proj-body">미션 동선 설계: 악당을 추적하는 스토리에서 자연스럽게 맵을 순회하도록 미션을 배치했습니다. 플레이어가 이미 꾸며놓은 공간을 다시 경험하게 하면서, 이야기의 마무리와 공간적 완결감을 동시에 제공합니다.</p>
+          <p class="proj-body">위베어 베어스 IP 기반 퍼즐 게임 월드맵 스토리 구조 총괄. 게임플레이 동선과 서사를 하나의 흐름으로 연결하는 구조 설계 담당.</p>
+          <p class="proj-body">미션 동선 설계: 악당 추적 스토리에서 자연스럽게 맵을 순회하도록 미션 배치. 기존에 꾸민 공간을 재경험하게 하여 이야기 마무리와 공간적 완결감 동시 제공.</p>
           <div class="design-intent">
             <div class="intent-label">디자인 의도</div>
             <p>새로운 장소로 이동하기 전에 유저들이 꾸민 장소를 한 번 더 둘러보게 해주고, 악당과의 이야기를 마무리한다.</p>
-          </div>
-          <div class="mission-flow" aria-label="미션 순서">
-            <span class="flow-step">광장</span>
-            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-            <span class="flow-step">놀이터</span>
-            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-            <span class="flow-step">테니스장</span>
-            <span class="flow-arrow" aria-hidden="true">&#8594;</span>
-            <span class="flow-step">주차장</span>
           </div>
           <div class="proj-meta">
             <div class="meta-item">
@@ -84,6 +75,28 @@
         </div>
       </div>
 
+      <!-- 동선 맵 -->
+      <div class="map-overlay-container" style="margin-top:2rem;">
+        <img src="image/wbb/wbbmap.png" alt="놈놈 저택 월드맵 - 미션 동선: 광장 > 놀이터 > 테니스장 > 주차장" class="wbb-map">
+        <svg class="map-svg" viewBox="0 0 4334 2222" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <marker id="wbb-arrow" markerUnits="userSpaceOnUse" markerWidth="90" markerHeight="64" refX="85" refY="32" orient="auto">
+              <polygon points="0 0, 90 32, 0 64" fill="#2563EB"/>
+            </marker>
+          </defs>
+          <!-- 1: 광장 -> 놀이터 -->
+          <line x1="2500" y1="680" x2="3240" y2="1060" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+          <!-- 2: 놀이터 -> 테니스장 -->
+          <line x1="3330" y1="1160" x2="1700" y2="1640" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+          <!-- 3: 테니스장 -> 주차장 -->
+          <line x1="1440" y1="1670" x2="610" y2="1090" stroke="#2563EB" stroke-width="14" stroke-dasharray="60 28" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        </svg>
+        <div class="map-label" style="left:54%;top:21%"><span class="map-label-num">1</span>광장</div>
+        <div class="map-label" style="left:79%;top:43%"><span class="map-label-num">2</span>놀이터</div>
+        <div class="map-label" style="left:34%;top:69%"><span class="map-label-num">3</span>테니스장</div>
+        <div class="map-label" style="left:10%;top:40%"><span class="map-label-num">4</span>주차장</div>
+      </div>
+
       <!-- 심층 케이스 -->
       <div class="work-sub-header" style="margin-top: 3rem;">
         <span class="work-sub-label">심층 케이스</span>
@@ -91,8 +104,8 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">한 파트의 미션 전체를 처음부터 끝까지 혼자 설계한 사례입니다. 시나리오 집필과 미션 연출을 모두 담당하며, 플레이어 동선, 감정 곡선, IP 세계관이라는 세 가지 제약을 동시에 만족시키는 구조를 찾아야 했습니다.</p>
-          <p class="proj-body">캐릭터 역할 분배: 판다가 재치를 발휘해 악당을 잡는 장면을 만들기 위해, 가장 강한 캐릭터인 아이스베어는 기습으로 무력화하고, 그리즐리는 쫓기는 상태로 설정해 서사적 공간을 확보했습니다.</p>
+          <p class="proj-body">한 파트 미션 전체 단독 설계 사례. 시나리오 집필 및 미션 연출 전담, 플레이어 동선, 감정 곡선, IP 세계관 세 가지 제약을 동시에 만족하는 구조 설계.</p>
+          <p class="proj-body">캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격 당하는 상태로 설정하여 서사적 공간 확보.</p>
           <div class="bear-portraits">
             <div class="bear-portrait">
               <img src="image/WBB/grizzly.png" alt="그리즐리">
@@ -110,12 +123,17 @@
               <span class="bear-role">재치로 악당 검거</span>
             </div>
           </div>
-          <p class="proj-body">쿼터뷰 연출 적응: 원작에서 아이들이 악당 뒤를 몰래 지나가는 장면은 쿼터뷰로 그대로 재현하기 어려워, 순간이동 연출로 변형했습니다. 미디엄의 제약을 인식하고 대안을 찾는 것이 연출 기획의 핵심입니다.</p>
+          <img src="image/wbb/ambush.gif" alt="아이스베어 기습 무력화 - 인게임 장면" class="scene-gif">
+          <p class="proj-body">쿼터뷰 연출 적응: 원작의 해당 장면을 쿼터뷰로 직접 재현하기 어려워 순간이동 연출로 변형. 미디엄 제약 인식 후 대안 연출 적용.</p>
+          <figure class="scene-ref">
+            <img src="image/wbb/ambush.webp" alt="원작 참고 장면">
+            <figcaption>원작 장면 참고</figcaption>
+          </figure>
           <div class="design-intent">
             <div class="intent-label">디자인 의도</div>
             <p>곰들이 직접 사람을 공격하는 것은 원작의 성격과 맞지 않는다. &#8594; 테니스공 발사기라는 도구를 활용한 간접 공격으로 해결.</p>
           </div>
-          <img src="image/WBB/IMG_1808.PNG" alt="판다가 테니스공 발사기로 악당을 검거하는 장면" class="scene-screenshot">
+          <img src="image/wbb/tenisball.gif" alt="판다가 테니스공 발사기로 악당을 검거하는 장면" class="scene-gif">
           <div class="proj-meta">
             <div class="meta-item">
               <span class="meta-label">역할</span>
@@ -162,13 +180,8 @@
       <div class="work-two-col">
         <div class="work-col-text">
           <div class="proj-subtitle">Unbound · 1인 개발 프로토타입 · 2024</div>
-          <p class="proj-body">회사를 떠난 후, 혼자 게임을 만들어보기로 했습니다. 도구를 배우기 위한 것이 아니라, 기획자가 개발 파이프라인 전체를 직접 경험해보기 위한 시도였습니다.</p>
-          <p class="proj-body">Unreal Engine 5의 Blueprint를 사용해 퀘스트 시스템의 기초를 구현했습니다. 캐릭터 이동, 인터랙션, 대화 시퀀스를 직접 연결하며, 코드 없이도 게임 로직을 구성하는 Blueprint의 가능성과 한계를 동시에 파악했습니다.</p>
-          <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달했고, 캐릭터 이미지는 DALL-E로 생성하고 Photoshop으로 가공했으며, 사운드는 Audacity로 편집했습니다.</p>
-          <div class="design-intent">
-            <div class="intent-label">디자인 의도</div>
-            <p>기획자로서 개발자가 마주하는 제약을 직접 이해하고, 협업 시 더 현실적인 기획을 할 수 있는 시야를 갖춘다.</p>
-          </div>
+          <p class="proj-body">UE5 Blueprint를 활용한 쿼터뷰 1인 개발 프로토타입. 캐릭터 이동, NPC 인터랙션, 대화 시퀀스, 퀘스트 수락 등 게임 로직 전반을 Blueprint로 구현.</p>
+          <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달. 캐릭터 이미지는 DALL-E 생성 후 Photoshop 가공, 사운드는 Audacity 편집.</p>
           <div class="proj-meta">
             <div class="meta-item">
               <span class="meta-label">제작년도</span>
@@ -204,7 +217,7 @@
         <span class="work-sub-label">구현 상세</span>
         <h3 class="work-sub-title">Blueprint &amp; Behavior Tree</h3>
       </div>
-      <p class="proj-body">Blueprint 비주얼 스크립팅으로 퀘스트 수락, NPC 대화, 아이템 수집 등의 게임 로직을 구현했습니다. Behavior Tree를 활용해 NPC의 행동 패턴(순찰, 추적, 공격)을 설계하고, Blackboard 데이터를 기반으로 상태 전환을 제어했습니다.</p>
+      <p class="proj-body">Blueprint 비주얼 스크립팅으로 퀘스트 수락, NPC 대화, 아이템 수집 등 게임 로직 구현. Behavior Tree 및 Blackboard를 활용한 NPC 상태 전환 구성.</p>
       <div class="image-placeholder-grid">
         <div class="image-placeholder">
           <span class="placeholder-text">Blueprint 스크린샷 (준비중)</span>
@@ -234,11 +247,7 @@
       <div class="work-two-col">
         <div class="work-col-text">
           <div class="proj-subtitle">퀘스트 시스템 습작 · 1인 개발 · 2026</div>
-          <p class="proj-body">AI 개발과 퀘스트 기획의 습작을 위해 만든 프로젝트입니다. 다양한 생성형 AI 툴을 활용하여 이미지, 사운드, 3D 모델, 코드 작성 등 전반적인 게임 개발 파이프라인을 실험하는 동시에, 퀘스트 시스템과 대화 시스템을 데이터 중심으로 구조화하고 설계하는 연습을 목적으로 합니다.</p>
-          <div class="design-intent">
-            <div class="intent-label">디자인 의도</div>
-            <p>기획자가 직접 개발 파이프라인 전체를 경험하고, 퀘스트 시스템을 데이터 중심으로 구조화하는 설계 역량을 기른다.</p>
-          </div>
+          <p class="proj-body">생성형 AI 툴을 활용한 게임 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작. 이미지, 사운드, 3D 모델, 코드 작업 전반에 AI 툴 적용.</p>
           <div class="proj-meta">
             <div class="meta-item">
               <span class="meta-label">제작년도</span>
@@ -319,7 +328,7 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">퀘스트 데이터를 JSON으로 구조화해 기획과 구현을 분리했습니다. 퀘스트 ID, NPC 참조, 시작 조건, 목표 단계, 보상까지 모든 정보를 데이터로 관리합니다.</p>
+          <p class="proj-body">퀘스트 데이터를 JSON으로 구조화하여 기획과 구현 분리. 퀘스트 ID, NPC 참조, 시작 조건, 목표 단계, 보상까지 모든 정보를 데이터로 관리.</p>
           <div class="data-table">
             <table>
               <thead>
@@ -336,7 +345,7 @@
               </tbody>
             </table>
           </div>
-          <p class="proj-body">startConditions로 선행 퀘스트 완료, 플래그 값 검사, 아이템 보유 여부 등 복수의 조건을 설정할 수 있습니다. objectives는 순차적으로 진행되며, 지역 도달(EnterArea), 대화 완료(CompleteDialogue), 적 처치(DefeatEnemies), 아이템 수집(CollectItems) 네 가지 타입을 지원합니다.</p>
+          <p class="proj-body">startConditions로 선행 퀘스트 완료, 플래그 값 검사, 아이템 보유 여부 등 복수 조건 설정 가능. objectives는 순차 진행되며, 지역 도달(EnterArea), 대화 완료(CompleteDialogue), 적 처치(DefeatEnemies), 아이템 수집(CollectItems) 네 가지 타입 지원.</p>
         </div>
         <div class="work-col-media">
           <div class="code-block">
@@ -369,7 +378,7 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">캐릭터 간의 텍스트 대화를 데이터로 제어합니다. 캐릭터 이름, 초상화(감정), 음성, 애니메이션 연출을 각 대사 라인별로 설정할 수 있으며, 대화 종료 시 플래그 변경을 통해 스토리와 퀘스트 진행을 제어합니다.</p>
+          <p class="proj-body">캐릭터 간 텍스트 대화를 데이터로 제어. 캐릭터 이름, 초상화(감정), 음성, 애니메이션 연출을 각 대사 라인별로 설정 가능하며, 대화 종료 시 플래그 변경을 통해 스토리 및 퀘스트 진행 제어.</p>
           <div class="data-table">
             <table>
               <thead>
@@ -385,7 +394,7 @@
               </tbody>
             </table>
           </div>
-          <p class="proj-body">flagActions는 네 가지 액션 타입을 지원합니다: 플래그 설정(0), 값 증가(1), 플래그 토글(2), 플래그 제거(3). 이를 통해 대화만으로도 퀘스트 상태 전환, NPC 행동 변화 등을 유연하게 제어할 수 있습니다.</p>
+          <p class="proj-body">flagActions는 네 가지 액션 타입 지원: 플래그 설정(0), 값 증가(1), 플래그 토글(2), 플래그 제거(3). 대화만으로도 퀘스트 상태 전환, NPC 행동 변화 등 유연하게 제어 가능.</p>
         </div>
         <div class="work-col-media">
           <div class="code-block">
@@ -423,7 +432,7 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">NPC의 표정, 음성, 기본 대화, 플래그 조건부 대화를 데이터로 관리합니다. dialogueConditions를 통해 플래그 값에 따라 NPC가 재생하는 대화를 자동으로 전환해 별도 코드 없이 NPC 상태 변화를 표현합니다.</p>
+          <p class="proj-body">NPC의 표정, 음성, 기본 대화, 플래그 조건부 대화를 데이터로 관리. dialogueConditions를 통해 플래그 값에 따라 NPC 재생 대화를 자동 전환, 별도 코드 없이 NPC 상태 변화 표현.</p>
           <div class="data-table">
             <table>
               <thead>

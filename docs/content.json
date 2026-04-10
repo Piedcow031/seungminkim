@@ -2,9 +2,7 @@
   "meta": {
     "title": "김승민 — 컨텐츠 기획자 · Quest Designer",
     "description": "스토리는 메커닉을 통해 살아난다. 4년 10개월, 수십 개의 미션, 하나의 신념.",
-    "email": "contact@seungminkim.me",
-    "phone": "+82 10-4158-9118",
-    "phoneHref": "tel:+821041589118"
+    "email": "contact@seungminkim.me"
   },
 
   "hero": {
@@ -230,7 +228,6 @@
     "description": "편하게 연락 주세요.",
     "items": [
       { "label": "Email", "value": "contact@seungminkim.me", "href": "mailto:contact@seungminkim.me" },
-      { "label": "Phone", "value": "+82 10-4158-9118", "href": "tel:+821041589118" },
       { "label": "Works", "value": "YouTube 작업물 보기", "href": "https://youtu.be/gOQyfDVSrdE?si=ylAQNaSHu1CGkwoC" }
     ],
     "ctaLabel": "메일 보내기",
