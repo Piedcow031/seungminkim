@@ -25,7 +25,7 @@
      PROJECT 01: WE BARE BEARS THE PUZZLE
      ============================================================ -->
 <section id="wbb" class="work-section">
-  <div class="chapter-sticky">
+  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
     <div class="section-inner wide">
       <a href="index.html#projects" class="back-link" style="margin-bottom:0.4rem;">&larr; 작업물 목록</a>
       <div class="chapter-header">
@@ -127,15 +127,15 @@
             <p>원래는 탐문 형식의 미션을 더 추가해 추리 느낌을 살리려 했으나, 재화로 진행하는 게임 특성상 억지로 끌어가는 느낌을 줄 수 있어 단일 미션으로 축소. 대신 각 장면에 밀도를 높이는 방향으로 전환.</p>
           </div>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
+            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
             <br>아이스베어 탐문 장면: 대화 능력이 부족한 아이스베어가 탐문을 맡는 상황을 설정. 대화가 어긋나는 것처럼 보이지만 결과적으로 원하는 정보에 도달하는 방식으로 개그를 유도.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
+            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
             <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도 형성.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
+            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
             <br>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격 당하는 상태로 설정하여 서사적 공간 확보.
           </p>
           <div class="bear-portraits">
@@ -184,7 +184,7 @@
      PROJECT 02: UNREAL QUARTER-VIEW
      ============================================================ -->
 <section id="unreal" class="work-section">
-  <div class="chapter-sticky">
+  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
     <div class="section-inner wide">
       <div class="chapter-header">
         <span class="chapter-num">02 /</span>
@@ -197,7 +197,6 @@
     <div class="section-inner wide">
       <div class="work-two-col">
         <div class="work-col-text">
-          <div class="proj-subtitle">Unbound · 1인 개발 프로토타입 · 2024</div>
           <p class="proj-body">UE5 Blueprint를 활용한 쿼터뷰 1인 개발 프로토타입. 캐릭터 이동, NPC 인터랙션, 대화 시퀀스, 퀘스트 수락 등 게임 로직 전반을 Blueprint로 구현.</p>
           <p class="proj-body">레벨 에셋은 Unreal Marketplace에서 조달. 캐릭터 이미지는 GPT IMAGE 생성 후 Photoshop 가공, 사운드는 Audacity 편집.</p>
           <div class="proj-meta">
@@ -326,7 +325,7 @@
       <!-- 2행: 격노 페이즈 -->
       <div class="attack-phase-row" style="margin-top:1.5rem;">
         <div class="attack-phase-label attack-phase-label--enrage">격노 페이즈 (HP 임계치 이하)</div>
-        <div class="attack-phase-grid attack-phase-grid--summon">
+        <div class="attack-phase-grid attack-phase-grid--summon" style="display:grid;grid-template-columns:220px 1fr;align-items:start;gap:1.25rem;max-width:600px;">
           <figure style="margin:0;">
             <img src="image/unbound/GT_Summon.gif" alt="보스 Summon 미니언 소환" style="width:100%; border-radius:4px;">
           </figure>
@@ -406,7 +405,7 @@
      PROJECT 03: FARMQUEST
      ============================================================ -->
 <section id="farmquest" class="work-section">
-  <div class="chapter-sticky">
+  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
     <div class="section-inner wide">
       <div class="chapter-header">
         <span class="chapter-num">03 /</span>
@@ -420,7 +419,6 @@
     <div class="section-inner wide">
       <div class="work-two-col">
         <div class="work-col-text">
-          <div class="proj-subtitle">퀘스트 시스템 습작 · 1인 개발 · 2026</div>
           <p class="proj-body">생성형 AI 툴을 활용한 게임 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작. 이미지, 사운드, 3D 모델, 코드 작업 전반에 AI 툴 적용.</p>
         </div>
         <div class="work-col-media" style="position:static;">
