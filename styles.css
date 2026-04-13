@@ -1558,6 +1558,85 @@ img {
 }
 
 /* ============================================================
+   ATTACK PHASE LAYOUT
+   ============================================================ */
+.attack-phase-row {
+  border-left: 2px solid var(--rule-heavy);
+  padding-left: 1rem;
+}
+
+.attack-phase-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.attack-phase-label--enrage {
+  color: #c0392b;
+}
+
+.attack-phase-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.attack-phase-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.attack-phase-grid--summon {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: start;
+  gap: 1.25rem;
+  max-width: 600px;
+}
+
+.summon-desc {
+  padding-top: 0.25rem;
+}
+
+.attack-caption {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* GIF / work image hover */
+.attack-phase-grid figure img,
+.work-img {
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.attack-phase-grid figure:hover img,
+.work-img:hover {
+  filter: brightness(1.08);
+  transform: scale(1.02);
+}
+
+/* Dark blueprint screenshot polish */
+img[src*="/unbound/Boss_"],
+img[src*="/unbound/PC_BP"] {
+  border: 1px solid rgba(17, 24, 39, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .attack-phase-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .attack-phase-grid--summon {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+/* ============================================================
    WORKS PAGE
    ============================================================ */
 .work-section {
@@ -1566,6 +1645,32 @@ img {
 
 .work-section > .section-inner:first-child {
   padding-bottom: 0;
+}
+
+/* ============================================================
+   CHAPTER STICKY TITLE
+   ============================================================ */
+.chapter-sticky {
+  position: sticky;
+  top: 3.7rem; /* below fixed nav */
+  z-index: 50;
+  background: var(--bg);
+}
+
+.chapter-sticky .section-inner {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+.chapter-sticky .chapter-header {
+  margin-bottom: 0;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--rule-heavy);
+}
+
+.chapter-sticky .back-link {
+  display: block;
+  margin-bottom: 0.35rem;
 }
 
 .back-link {
@@ -1609,6 +1714,60 @@ img {
   gap: 1rem;
   position: sticky;
   top: 5rem;
+}
+
+.video-chapters {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.video-chapter-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-right: 0.25rem;
+}
+
+.video-chapter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  background: var(--bg-inset);
+  border: 1px solid var(--rule);
+  border-radius: 99px;
+  padding: 0.2rem 0.65rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.video-chapter-item:hover {
+  border-color: var(--accent);
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.video-chapter-item:hover .chapter-name {
+  color: var(--accent);
+}
+
+.chapter-time {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.chapter-name {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-mid);
+  transition: color 0.15s;
 }
 
 .video-embed-work {
@@ -1685,7 +1844,7 @@ img {
 }
 
 .data-table th {
-  background: var(--bg-inset);
+  background: rgba(37, 99, 235, 0.08);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
