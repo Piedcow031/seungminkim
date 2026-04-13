@@ -1223,10 +1223,10 @@ img {
   height: 24px;
   width: auto;
   max-width: 100%;
-  opacity: 0.55;
+  opacity: 1;
   display: block;
   margin-left: auto;
-  filter: grayscale(1);
+  filter: none;
 }
 
 .proj-worldmap {
@@ -1803,7 +1803,14 @@ img[src*="/unbound/PC_BP"] {
   text-transform: uppercase;
   color: var(--accent);
   display: block;
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
+}
+
+.work-sub-label + p,
+.work-sub-label + .proj-body,
+.work-sub-header + p,
+.work-sub-header + .proj-body {
+  margin-top: 0;
 }
 
 .work-sub-title {
