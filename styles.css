@@ -1168,15 +1168,15 @@ img {
 
 .meta-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .meta-value {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--text);
 }
 
@@ -1347,7 +1347,7 @@ img {
 
 .scene-compare figcaption {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
   margin-top: 0.35rem;
 }
@@ -1712,7 +1712,7 @@ img[src*="/unbound/PC_BP"] {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: static !important;
+  position: static;
 }
 
 .video-chapters {
@@ -1793,13 +1793,13 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .work-sub-header {
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 .work-sub-label {
   font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   display: block;
