@@ -1712,8 +1712,7 @@ img[src*="/unbound/PC_BP"] {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  position: sticky;
-  top: 5rem;
+  position: static !important;
 }
 
 .video-chapters {
@@ -1736,7 +1735,7 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .video-chapter-item {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   text-decoration: none;
@@ -1746,7 +1745,14 @@ img[src*="/unbound/PC_BP"] {
   padding: 0.2rem 0.65rem;
   transition: border-color 0.15s, background 0.15s;
   font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  color: inherit;
 }
 
 .video-chapter-item:hover {
