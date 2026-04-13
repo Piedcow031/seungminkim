@@ -1745,6 +1745,8 @@ img[src*="/unbound/PC_BP"] {
   border-radius: 99px;
   padding: 0.2rem 0.65rem;
   transition: border-color 0.15s, background 0.15s;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .video-chapter-item:hover {

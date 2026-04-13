@@ -42,7 +42,7 @@
       <!-- 영상 (전체 너비) -->
       <div style="margin-top:1.5rem;">
         <div class="video-embed-work">
-          <iframe src="https://www.youtube.com/embed/gOQyfDVSrdE" title="위베베 미션 연출 편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe id="wbb-player" src="https://www.youtube.com/embed/gOQyfDVSrdE?enablejsapi=1" title="위베베 미션 연출 편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -126,9 +126,18 @@
             <div class="intent-label">축소 결정</div>
             <p>원래는 탐문 형식의 미션을 더 추가해 추리 느낌을 살리려 했으나, 재화로 진행하는 게임 특성상 억지로 끌어가는 느낌을 줄 수 있어 단일 미션으로 축소. 대신 각 장면에 밀도를 높이는 방향으로 전환.</p>
           </div>
-          <p class="proj-body"><a href="https://www.youtube.com/watch?v=gOQyfDVSrdE&t=54" target="_blank" rel="noopener" class="video-chapter-item" style="display:inline-flex;margin-right:0.5rem;vertical-align:middle;"><span class="chapter-time">0:54</span><span class="chapter-name">광장으로 이동</span></a>아이스베어 탐문 장면: 대화 능력이 부족한 아이스베어가 탐문을 맡는 상황을 설정. 대화가 어긋나는 것처럼 보이지만 결과적으로 원하는 정보에 도달하는 방식으로 개그를 유도.</p>
-          <p class="proj-body"><a href="https://www.youtube.com/watch?v=gOQyfDVSrdE&t=118" target="_blank" rel="noopener" class="video-chapter-item" style="display:inline-flex;margin-right:0.5rem;vertical-align:middle;"><span class="chapter-time">1:58</span><span class="chapter-name">아이들에게 탐문</span></a>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도 형성.</p>
-          <p class="proj-body"><a href="https://www.youtube.com/watch?v=gOQyfDVSrdE&t=175" target="_blank" rel="noopener" class="video-chapter-item" style="display:inline-flex;margin-right:0.5rem;vertical-align:middle;"><span class="chapter-time">2:55</span><span class="chapter-name">범인 검거</span></a>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격 당하는 상태로 설정하여 서사적 공간 확보.</p>
+          <p class="proj-body">
+            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
+            <br>아이스베어 탐문 장면: 대화 능력이 부족한 아이스베어가 탐문을 맡는 상황을 설정. 대화가 어긋나는 것처럼 보이지만 결과적으로 원하는 정보에 도달하는 방식으로 개그를 유도.
+          </p>
+          <p class="proj-body">
+            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
+            <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도 형성.
+          </p>
+          <p class="proj-body">
+            <button type="button" class="video-chapter-item" style="display:inline-flex;margin-bottom:0.5rem;cursor:pointer;" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
+            <br>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격 당하는 상태로 설정하여 서사적 공간 확보.
+          </p>
           <div class="bear-portraits">
             <div class="bear-portrait">
               <img src="image/WBB/grizzly.png" alt="그리즐리">
@@ -612,5 +621,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
+<script>
+var wbbPlayer;
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+document.head.appendChild(tag);
+
+function onYouTubeIframeAPIReady() {
+  wbbPlayer = new YT.Player('wbb-player');
+}
+
+function seekWbbPlayer(seconds) {
+  if (wbbPlayer && wbbPlayer.seekTo) {
+    wbbPlayer.seekTo(seconds, true);
+    wbbPlayer.playVideo();
+    document.getElementById('wbb-player').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+</script>
 </body>
 </html>
