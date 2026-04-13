@@ -1793,7 +1793,7 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .work-sub-header {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
 }
 
 .work-sub-label {
@@ -1803,7 +1803,7 @@ img[src*="/unbound/PC_BP"] {
   text-transform: uppercase;
   color: var(--accent);
   display: block;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0;
 }
 
 .work-sub-title {
