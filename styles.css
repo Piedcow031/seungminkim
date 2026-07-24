@@ -1338,7 +1338,8 @@ img {
   margin: 0;
 }
 
-.scene-compare img {
+.scene-compare img,
+.scene-compare video {
   width: 100%;
   height: auto;
   display: block;
