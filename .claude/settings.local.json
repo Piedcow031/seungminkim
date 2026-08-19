@@ -5,7 +5,9 @@
       "Bash(identify /Users/ksm/Documents/GitHub/seungminkim/image/wbb/tenisball.gif)",
       "Bash(ls -lh /Users/ksm/Documents/GitHub/seungminkim/image/wbb/*.gif /Users/ksm/Documents/GitHub/seungminkim/image/wbb/*.webp)",
       "Bash(python3 -c \"from PIL import Image; img = Image.open\\('/Users/ksm/Documents/GitHub/seungminkim/image/wbb/wbbmap.png'\\); print\\(img.size\\)\")",
-      "Bash(sips -g pixelWidth -g pixelHeight /Users/ksm/Documents/GitHub/seungminkim/image/wbb/wbbmap.png)"
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/ksm/Documents/GitHub/seungminkim/image/wbb/wbbmap.png)",
+      "Bash(find . -type f \\\\\\( -name \"*.json\" -o -name \"*.md\" -o -name \"*.txt\" \\\\\\) -exec grep -l \"Ghost\\\\|ghost\\\\|Behavior\\\\|Blackboard\" {} \\\\;)",
+      "Bash(ls -lh ./docs/*.pdf)"
     ]
   }
 }
