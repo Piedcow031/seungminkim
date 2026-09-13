@@ -13,19 +13,6 @@
 </head>
 <body>
 
-<!-- Reading progress bar -->
-<div id="progress-bar"></div>
-
-<!-- Side dot navigator -->
-<nav id="dot-nav" aria-label="섹션 네비게이션">
-  <button class="dot active" data-target="hero" title="홈"></button>
-  <button class="dot" data-target="story" title="소개"></button>
-  <button class="dot" data-target="experience" title="경력"></button>
-  <button class="dot" data-target="projects" title="작업물"></button>
-  <button class="dot" data-target="skills" title="기술"></button>
-  <button class="dot" data-target="contact" title="연락"></button>
-</nav>
-
 <!-- Top nav -->
 <header id="nav">
   <span class="nav-name">김승민</span>
@@ -138,44 +125,50 @@
       <span class="chapter-label">작업물</span>
     </div>
 
-    <div class="project-cards">
-      <a href="works.html#wbb" class="project-card reveal">
+    <div class="project-cards reveal">
+      <a href="works.html#wbb" class="project-card project-card--feature">
         <div class="card-thumb"><img src="image/wbbthumbnail.webp" alt="We Bare Bears the Puzzle thumbnail" loading="lazy" width="960" height="601"></div>
-        <div class="card-num">01</div>
-        <h3 class="card-title">We Bare Bears the Puzzle</h3>
-        <p class="card-desc">위 베어 베어스 IP 퍼즐 게임. 월드맵 기획, 미션 연출, 시나리오 담당.</p>
-        <div class="card-tags">
-          <span class="card-tag">월드맵 기획</span>
-          <span class="card-tag">미션 연출</span>
-          <span class="card-tag">Lua</span>
-          <span class="card-tag">Unity3D</span>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-num">01</span><span class="card-kind">상용 서비스 · 위메이드플레이</span></div>
+          <h3 class="card-title">We Bare Bears the Puzzle</h3>
+          <p class="card-desc">위 베어 베어스 IP 퍼즐 게임. 월드맵 기획, 미션 연출, 시나리오 담당. 워너브라더스 아태 지사 검수를 통과한 시즌 월드맵 다수 제작.</p>
+          <div class="card-tags">
+            <span class="card-tag">월드맵 기획</span>
+            <span class="card-tag">미션 연출</span>
+            <span class="card-tag">Lua</span>
+            <span class="card-tag">Unity3D</span>
+          </div>
+          <span class="card-link">자세히 보기 &#8594;</span>
         </div>
-        <span class="card-link">자세히 보기 &#8594;</span>
       </a>
 
-      <a href="works.html#unreal" class="project-card reveal">
+      <a href="works.html#unreal" class="project-card">
         <div class="card-thumb"><img src="image/unboundthumbnail.webp" alt="Unbound thumbnail" loading="lazy" width="960" height="402"></div>
-        <div class="card-num">02</div>
-        <h3 class="card-title">Unbound</h3>
-        <p class="card-desc">UE5 Blueprint로 제작한 쿼터뷰 1인 개발 프로토타입.</p>
-        <div class="card-tags">
-          <span class="card-tag">UE5</span>
-          <span class="card-tag">Blueprint</span>
-          <span class="card-tag">Behavior Tree</span>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-num">02</span><span class="card-kind">개인 프로토타입 · 2024</span></div>
+          <h3 class="card-title">Unbound</h3>
+          <p class="card-desc">UE5 Blueprint로 제작한 쿼터뷰 1인 개발 프로토타입.</p>
+          <div class="card-tags">
+            <span class="card-tag">UE5</span>
+            <span class="card-tag">Blueprint</span>
+            <span class="card-tag">Behavior Tree</span>
+          </div>
+          <span class="card-link">자세히 보기 &#8594;</span>
         </div>
-        <span class="card-link">자세히 보기 &#8594;</span>
       </a>
 
-      <a href="works.html#farmquest" class="project-card reveal">
+      <a href="works.html#farmquest" class="project-card">
         <div class="card-thumb"><img src="image/farmquestthumbnail.webp" alt="FarmQuest thumbnail" loading="lazy" width="960" height="540"></div>
-        <div class="card-num">03</div>
-        <h3 class="card-title">FarmQuest</h3>
-        <p class="card-desc">생성형 AI 툴을 활용한 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작.</p>
-        <div class="card-tags">
-          <span class="card-tag">퀘스트 데이터 설계</span>
-          <span class="card-tag">Unity 6</span>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-num">03</span><span class="card-kind">개인 프로토타입 · 2026</span></div>
+          <h3 class="card-title">FarmQuest</h3>
+          <p class="card-desc">생성형 AI 툴을 활용한 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작.</p>
+          <div class="card-tags">
+            <span class="card-tag">퀘스트 데이터 설계</span>
+            <span class="card-tag">Unity 6</span>
+          </div>
+          <span class="card-link">자세히 보기 &#8594;</span>
         </div>
-        <span class="card-link">자세히 보기 &#8594;</span>
       </a>
     </div>
 
@@ -266,8 +259,6 @@
   <span>&#169; 2026 Seungmin Kim</span>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
