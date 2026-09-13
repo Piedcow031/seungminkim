@@ -1237,6 +1237,13 @@ img[src*="/unbound/PC_BP"] {
   align-items: start;
 }
 
+/* Grid items default to min-width:auto, so a wide table stretches the
+   column instead of letting .data-table scroll inside it. */
+.work-col-text,
+.work-col-media {
+  min-width: 0;
+}
+
 .work-col-text {
   display: flex;
   flex-direction: column;
