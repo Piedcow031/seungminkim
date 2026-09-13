@@ -1301,18 +1301,71 @@ img[src*="/unbound/PC_BP"] {
   transition: color 0.15s;
 }
 
-.video-embed-work {
+/* YouTube facade. The embed is not created until the viewer clicks, so
+   at rest there is no player chrome and none of the ~1MB the iframe
+   pulls in. modestbranding/showinfo are both dead parameters now, so
+   this is the only way left to keep the resting state clean. */
+.yt {
   position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg-inset);
 }
 
-.video-embed-work iframe {
+.yt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yt iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.yt-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: rgba(32, 29, 24, 0.3);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.25s;
+}
+
+.yt-play:hover {
+  background: rgba(32, 29, 24, 0.16);
+}
+
+.yt-play::before {
+  content: '';
+  grid-area: 1 / 1;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: transform 0.25s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.yt-play::after {
+  content: '';
+  grid-area: 1 / 1;
+  margin-left: 5px;
+  border-left: 17px solid var(--bg);
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+.yt-play:hover::before {
+  transform: scale(1.1);
 }
 
 .work-sub-header {

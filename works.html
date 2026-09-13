@@ -40,8 +40,9 @@
       <div class="proj-subtitle">월드맵 기획 · 미션 연출 · 시나리오</div>
 
       <!-- 영상 -->
-      <div class="video-embed-work" style="margin-top:1.5rem;">
-        <iframe loading="lazy" src="https://www.youtube.com/embed/gOQyfDVSrdE" title="위베베 미션 연출 편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="yt" style="margin-top:1.5rem;" data-id="gOQyfDVSrdE" data-title="위베베 미션 연출 편집본">
+        <img src="image/wbbthumbnail.webp" alt="" loading="lazy" width="960" height="601">
+        <button type="button" class="yt-play" aria-label="영상 재생: 위베베 미션 연출 편집본"></button>
       </div>
 
       <!-- 개요 + 메타 -->
@@ -142,15 +143,15 @@
             <p>원래는 탐문 형식의 미션을 더 추가해 추리 느낌을 살리려 했으나, 재화로 진행하는 게임 특성상 억지로 끌어가는 느낌을 줄 수 있어 단일 미션으로 축소했다. 대신 각 장면의 밀도를 높이는 방향으로 전환했다.</p>
           </div>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
+            <button type="button" class="video-chapter-item" data-seek="57"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
             <br>아이스베어 탐문 장면: 대화 능력이 부족한 아이스베어가 탐문을 맡는 상황을 설정. 대화가 어긋나는 것처럼 보이지만 결과적으로 원하는 정보에 도달하는 방식으로 개그를 유도했다.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
+            <button type="button" class="video-chapter-item" data-seek="120"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
             <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도를 형성했다.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
+            <button type="button" class="video-chapter-item" data-seek="178"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
             <br>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격당하는 상태로 설정해 서사적 공간을 확보했다.
           </p>
           <div class="bear-portraits">
@@ -207,8 +208,10 @@
           </div>
         </div>
         <div class="work-col-media" style="position:sticky;top:10rem;">
-          <div class="video-embed-work">
-            <iframe id="wbb-player" src="https://www.youtube.com/embed/_a41Ebx1kq4?enablejsapi=1" title="놈놈 저택 가방 되찾기 무편집본" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="yt" data-id="_a41Ebx1kq4" data-api="1" data-title="놈놈 저택 가방 되찾기 무편집본">
+            <img src="https://i.ytimg.com/vi/_a41Ebx1kq4/maxresdefault.jpg" alt="" loading="lazy"
+                 onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/_a41Ebx1kq4/hqdefault.jpg'">
+            <button type="button" class="yt-play" aria-label="영상 재생: 놈놈 저택 가방 되찾기 무편집본"></button>
           </div>
         </div>
       </div>
@@ -286,8 +289,9 @@
           </div>
         </div>
         <div class="work-col-media" style="position:static;">
-          <div class="video-embed-work">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/B0Qq2cvjaoQ" title="Unbound 플레이 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="yt" data-id="B0Qq2cvjaoQ" data-title="Unbound 플레이 영상">
+            <img src="image/unboundthumbnail.webp" alt="" loading="lazy" width="960" height="402">
+            <button type="button" class="yt-play" aria-label="영상 재생: Unbound 플레이 영상"></button>
           </div>
         </div>
       </div>
@@ -535,8 +539,9 @@
           </div>
         </div>
         <div class="work-col-media" style="position:static;">
-          <div class="video-embed-work">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/HkB8hlLZ9oE" title="FarmQuest 구현 영상" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="yt" data-id="HkB8hlLZ9oE" data-title="FarmQuest 구현 영상">
+            <img src="image/farmquestthumbnail.webp" alt="" loading="lazy" width="960" height="540">
+            <button type="button" class="yt-play" aria-label="영상 재생: FarmQuest 구현 영상"></button>
           </div>
         </div>
       </div>
@@ -772,23 +777,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-var wbbPlayer;
-var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-document.head.appendChild(tag);
-
-function onYouTubeIframeAPIReady() {
-  wbbPlayer = new YT.Player('wbb-player');
-}
-
-function seekWbbPlayer(seconds) {
-  if (wbbPlayer && wbbPlayer.seekTo) {
-    wbbPlayer.seekTo(seconds, true);
-    wbbPlayer.playVideo();
-    document.getElementById('wbb-player').scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-}
-</script>
 </body>
 </html>
