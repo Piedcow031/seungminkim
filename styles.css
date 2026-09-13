@@ -34,19 +34,19 @@
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --bg:        #F2F5F9;
-  --bg-warm:   #E8EDF5;
-  --bg-inset:  #DCE4EF;
+  --bg:        #F6F2EA;
+  --bg-warm:   #EDE6D8;
+  --bg-inset:  #E2D9C7;
 
-  --text:      #111827;
-  --text-mid:  #374151;
-  --text-dim:  #6B7280;
+  --text:      #201D18;
+  --text-mid:  #4B453B;
+  --text-dim:  #8C8371;
 
-  --accent:    #2563EB;
-  --accent-lt: #3B82F6;
+  --accent:    #9A3A1E;
+  --accent-lt: #C15A34;
 
-  --rule:       rgba(17,24,39,0.12);
-  --rule-heavy: rgba(17,24,39,0.35);
+  --rule:       rgba(32,29,24,0.12);
+  --rule-heavy: rgba(32,29,24,0.35);
 
   --fs-hero:  clamp(3rem, 7.5vw, 6.25rem);
   --fs-h1:    clamp(2.2rem, 5vw, 4rem);
@@ -55,7 +55,7 @@
   --fs-small: 0.8rem;
   --fs-mono:  0.75rem;
 
-  --font-display: 'NanumGothic', sans-serif;
+  --font-display: 'Noto Serif KR', serif;
   --font-body:    'NanumGothic', sans-serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
 
@@ -312,7 +312,7 @@ img {
 .hero-title {
   font-family: var(--font-display);
   font-size: var(--fs-hero);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.0;
   margin-bottom: 1.5rem;
   color: var(--text);
@@ -488,59 +488,28 @@ img {
   background: var(--bg);
 }
 
-.timeline {
-  position: relative;
+.role-card {
+  border: 1px solid var(--rule-heavy);
+  background: var(--bg-warm);
+  padding: 2.5rem;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: var(--rule);
-  transform: translateX(-50%);
-}
-
-.tl-item {
-  display: grid;
-  grid-template-columns: 1fr 60px 1fr;
-  margin-bottom: 4rem;
-}
-
-.tl-item:last-child {
-  margin-bottom: 0;
-}
-
-.tl-center {
+.role-card-head {
   display: flex;
-  justify-content: center;
-  padding-top: 0.4rem;
-  position: relative;
-  z-index: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--rule);
 }
 
-.tl-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  background: var(--bg);
+.role-logo {
+  height: 28px;
+  width: auto;
+  max-width: 40%;
   flex-shrink: 0;
-}
-
-.tl-dot.filled {
-  background: var(--accent);
-}
-
-.tl-right {
-  padding-left: 2rem;
-}
-
-.tl-left {
-  padding-right: 2rem;
-  text-align: right;
+  opacity: 0.85;
 }
 
 .tl-period {
@@ -632,10 +601,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-}
-
-.tl-item--left .tl-tags {
-  justify-content: flex-end;
 }
 
 .tl-tag {
@@ -917,7 +882,7 @@ img {
 
 .panel-item--selected {
   color: var(--accent);
-  background: rgba(37,99,235,0.08);
+  background: rgba(154,58,30,0.08);
 }
 
 .editor-viewport {
@@ -1075,7 +1040,7 @@ img {
 .proj-title {
   font-family: var(--font-display);
   font-size: var(--fs-h1);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.15;
   color: var(--text);
 }
@@ -1219,16 +1184,6 @@ img {
 /* ============================================================
    IMAGES
    ============================================================ */
-.tl-logo {
-  height: 24px;
-  width: auto;
-  max-width: 100%;
-  opacity: 1;
-  display: block;
-  margin-left: auto;
-  filter: none;
-}
-
 .proj-worldmap {
   width: 100%;
   height: auto;
@@ -1486,7 +1441,7 @@ img {
 .contact-headline {
   font-family: var(--font-display);
   font-size: var(--fs-h1);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.2;
   color: var(--text);
   margin-bottom: 1.5rem;
@@ -1622,7 +1577,7 @@ img {
 /* Dark blueprint screenshot polish */
 img[src*="/unbound/Boss_"],
 img[src*="/unbound/PC_BP"] {
-  border: 1px solid rgba(17, 24, 39, 0.3);
+  border: 1px solid rgba(32, 29, 24, 0.3);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
   border-radius: 6px;
 }
@@ -1758,7 +1713,7 @@ img[src*="/unbound/PC_BP"] {
 
 .video-chapter-item:hover {
   border-color: var(--accent);
-  background: rgba(37, 99, 235, 0.06);
+  background: rgba(154, 58, 30, 0.06);
 }
 
 .video-chapter-item:hover .chapter-name {
@@ -1860,7 +1815,7 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .data-table th {
-  background: rgba(37, 99, 235, 0.08);
+  background: rgba(154, 58, 30, 0.08);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
@@ -2228,41 +2183,12 @@ img[src*="/unbound/PC_BP"] {
     display: none;
   }
 
-  .timeline::before {
-    left: 20px;
-    transform: none;
+  .role-card {
+    padding: 1.75rem 1.5rem;
   }
 
-  /* tl-item has 3 children (logo / dot / content) but only 2 columns
-     on mobile; place them explicitly so content doesn't get squeezed
-     into the 40px dot column by grid auto-placement. */
-  .tl-item {
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: auto auto;
-    row-gap: 0.5rem;
-  }
-
-  .tl-item .tl-center {
-    grid-column: 1;
-    grid-row: 1 / 3;
-  }
-
-  .tl-item .tl-left {
-    grid-column: 2;
-    grid-row: 1;
-    padding-right: 0;
-    padding-left: 1.5rem;
-    text-align: left;
-  }
-
-  .tl-item .tl-logo {
-    margin-left: 0;
-  }
-
-  .tl-item .tl-right {
-    grid-column: 2;
-    grid-row: 2;
-    padding-left: 1.5rem;
+  .role-card-head {
+    flex-wrap: wrap;
   }
 
   .skills-grid {

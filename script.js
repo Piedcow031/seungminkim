@@ -4,6 +4,7 @@
 const progressBar = document.getElementById('progress-bar');
 
 function updateProgress() {
+  if (!progressBar) return;
   const h = document.documentElement.scrollHeight - window.innerHeight;
   if (h > 0) {
     progressBar.style.width = (window.scrollY / h * 100) + '%';

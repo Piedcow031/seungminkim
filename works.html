@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>작업물 · 김승민</title>
   <meta name="description" content="김승민의 작업물 상세 페이지">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -92,32 +92,32 @@
         <image href="image/WBB/wbbmap.webp" x="0" y="0" width="4334" height="2222"/>
         <defs>
           <marker id="wbb-arrow" markerUnits="userSpaceOnUse" markerWidth="100" markerHeight="70" refX="95" refY="35" orient="auto">
-            <polygon points="0 0, 100 35, 0 70" fill="#2563EB"/>
+            <polygon points="0 0, 100 35, 0 70" fill="#9A3A1E"/>
           </marker>
         </defs>
         <!-- 1: 광장 -> 놀이터 -->
-        <line x1="2480" y1="680" x2="3340" y2="1030" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <line x1="2480" y1="680" x2="3340" y2="1030" stroke="#9A3A1E" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
         <!-- 2: 놀이터 -> 테니스장 -->
-        <line x1="3430" y1="1110" x2="2260" y2="1590" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <line x1="3430" y1="1110" x2="2260" y2="1590" stroke="#9A3A1E" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
         <!-- 3: 테니스장 -> 주차장 -->
-        <line x1="2060" y1="1620" x2="700" y2="960" stroke="#2563EB" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
+        <line x1="2060" y1="1620" x2="700" y2="960" stroke="#9A3A1E" stroke-width="16" stroke-dasharray="70 30" marker-end="url(#wbb-arrow)" opacity="0.9"/>
         <!-- 1 광장 -->
-        <circle cx="2350" cy="650" r="60" fill="#2563EB"/>
+        <circle cx="2350" cy="650" r="60" fill="#9A3A1E"/>
         <text x="2350" y="650" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">1</text>
         <rect x="2420" y="618" width="260" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
         <text x="2550" y="650" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">광장</text>
         <!-- 2 놀이터 -->
-        <circle cx="3490" cy="1080" r="60" fill="#2563EB"/>
+        <circle cx="3490" cy="1080" r="60" fill="#9A3A1E"/>
         <text x="3490" y="1080" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">2</text>
         <rect x="3560" y="1048" width="340" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
         <text x="3730" y="1080" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">놀이터</text>
         <!-- 3 테니스장 -->
-        <circle cx="2120" cy="1640" r="60" fill="#2563EB"/>
+        <circle cx="2120" cy="1640" r="60" fill="#9A3A1E"/>
         <text x="2120" y="1640" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">3</text>
         <rect x="2190" y="1608" width="430" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
         <text x="2405" y="1640" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">테니스장</text>
         <!-- 4 주차장 -->
-        <circle cx="600" cy="930" r="60" fill="#2563EB"/>
+        <circle cx="600" cy="930" r="60" fill="#9A3A1E"/>
         <text x="600" y="930" fill="white" font-size="75" font-family="monospace" text-anchor="middle" dominant-baseline="middle" font-weight="bold">4</text>
         <rect x="670" y="898" width="330" height="64" fill="rgba(0,0,0,0.72)" rx="4"/>
         <text x="835" y="930" fill="white" font-size="58" font-family="monospace" text-anchor="middle" dominant-baseline="middle">주차장</text>
@@ -141,15 +141,15 @@
             <p>원래는 탐문 형식의 미션을 더 추가해 추리 느낌을 살리려 했으나, 재화로 진행하는 게임 특성상 억지로 끌어가는 느낌을 줄 수 있어 단일 미션으로 축소. 대신 각 장면에 밀도를 높이는 방향으로 전환.</p>
           </div>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
+            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(57)"><span class="chapter-time">00:57</span><span class="chapter-name">광장으로 이동하기</span></button>
             <br>아이스베어 탐문 장면: 대화 능력이 부족한 아이스베어가 탐문을 맡는 상황을 설정. 대화가 어긋나는 것처럼 보이지만 결과적으로 원하는 정보에 도달하는 방식으로 개그를 유도.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
+            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
             <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도 형성.
           </p>
           <p class="proj-body">
-            <button type="button" class="video-chapter-item" style="display:inline-flex;align-items:center;gap:0.35rem;margin-bottom:0.5rem;cursor:pointer;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:99px;padding:0.2rem 0.65rem;font-family:inherit;font-size:inherit;color:inherit;-webkit-appearance:none;appearance:none;" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
+            <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
             <br>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격 당하는 상태로 설정하여 서사적 공간 확보.
           </p>
           <div class="bear-portraits">
