@@ -25,7 +25,7 @@
      PROJECT 01: WE BARE BEARS THE PUZZLE
      ============================================================ -->
 <section id="wbb" class="work-section">
-  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
+  <div class="chapter-sticky">
     <div class="section-inner wide">
       <a href="index.html#projects" class="back-link" style="margin-bottom:0.4rem;">&larr; 작업물 목록</a>
       <div class="chapter-header">
@@ -89,7 +89,7 @@
 
       <!-- 동선 맵 -->
       <svg class="wbb-map-svg" viewBox="0 0 4334 2222" style="margin-top:2rem;" role="img" aria-label="놈놈 저택 월드맵 - 미션 동선: 광장 > 놀이터 > 테니스장 > 주차장">
-        <image href="image/WBB/wbbmap.webp?v=2"x="0" y="0" width="4334" height="2222"/>
+        <image href="image/WBB/wbbmap.webp?v=2" x="0" y="0" width="4334" height="2222"/>
         <defs>
           <marker id="wbb-arrow" markerUnits="userSpaceOnUse" markerWidth="100" markerHeight="70" refX="95" refY="35" orient="auto">
             <polygon points="0 0, 100 35, 0 70" fill="#1E4E66"/>
@@ -141,11 +141,11 @@
           </p>
           <p class="proj-body">
             <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(120)"><span class="chapter-time">02:00</span><span class="chapter-name">아이들에게 물어보기</span></button>
-            <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해한 아이들이 가방도 뇌물로 착각하게 만들어 자연스러운 협력 구도를 형성했다.
+            <br>아이들 오해 장치: 이전 스토리에서 어른들이 아이들의 놀이터를 철거하려 한 맥락을 활용. 악당을 철거하러 온 어른으로 오해하게 만들어서 아이들과 자연스러운 협력 구도를 형성했다.
           </p>
           <p class="proj-body">
             <button type="button" class="video-chapter-item" onclick="seekWbbPlayer(178)"><span class="chapter-time">02:58</span><span class="chapter-name">범인 잡기</span></button>
-            <br>캐릭터 역할 분배: 판다가 재치로 악당을 검거하는 장면 구성을 위해 아이스베어는 기습 무력화, 그리즐리는 추격당하는 상태로 설정해 서사적 공간을 확보했다.
+            <br>캐릭터 역할 분배: 제일 약한 판다가 재치로 악당을 검거하는 장면 구성을 위해 제일 강한 아이스베어는 기습으로 무력화, 그리즐리는 추격당하는 상태로 설정해 서사적 공간을 확보했다.
           </p>
           <div class="bear-portraits">
             <div class="bear-portrait">
@@ -191,10 +191,6 @@
               <span class="meta-value">IP 해석, 동선 설계, 장면 연출</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">영상 길이</span>
-              <span class="meta-value">약 4분 (무편집 전체)</span>
-            </div>
-            <div class="meta-item">
               <span class="meta-label">구역</span>
               <span class="meta-value">3번째 구역 · 놈놈 저택</span>
             </div>
@@ -206,37 +202,6 @@
           </div>
         </div>
       </div>
-
-      <!-- 퍼즐 레벨 디자인 -->
-      <div class="work-sub-header" style="margin-top:4rem;">
-        <span class="work-sub-label">레벨 디자인</span>
-        <h3 class="work-sub-title">3Match 퍼즐 레벨 · 라이브 운영</h3>
-      </div>
-      <p class="proj-body" style="margin-top:1rem;">월드 파트와 별개로 퍼즐 파트의 레벨 제작과 밸런싱을 담당했다. 신규 레벨을 만들어 내보내고 끝나는 것이 아니라, 라이브 지표를 보고 다시 조정하는 순환 구조로 운영했다.</p>
-
-      <div class="data-table" style="margin-top:1.25rem;">
-        <table>
-          <thead>
-            <tr><th>단계</th><th>작업</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>제작</td><td>인하우스 레벨 에디터로 3Match 퍼즐 레벨 구성</td></tr>
-            <tr><td>검증</td><td>직접 플레이테스트로 클리어 가능 여부와 체감 난이도 확인</td></tr>
-            <tr><td>배치</td><td>완성된 레벨의 출시 순서 결정 및 데이터 세팅</td></tr>
-            <tr><td>배포</td><td>라이브 서버에 반영</td></tr>
-            <tr><td>관측</td><td>배포된 맵의 클리어율 수집</td></tr>
-            <tr><td>조정</td><td>클리어율이 의도한 난이도 곡선에서 벗어난 구간을 재조정</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="design-intent" style="margin-top:1.5rem;">
-        <div class="intent-label">밸런싱 기준</div>
-        <p>레벨 난이도는 제작자의 체감이 아니라 라이브 클리어율을 근거로 판단했다. 플레이테스트 단계의 감각과 실제 유저 지표는 어긋나는 경우가 많아, 배포 후 데이터를 확인하고 되돌아가 고치는 과정을 전제로 레벨을 설계했다.</p>
-      </div>
-
-      <p class="proj-body" style="margin-top:1.5rem;">기존 오브젝트 조합만으로 난이도를 만들어내는 데 한계가 오는 구간에서는 신규 퍼즐 오브젝트를 기획해, 레벨 디자인이 쓸 수 있는 재료 자체를 늘렸다.</p>
-
     </div>
   </article>
 </section>
@@ -245,7 +210,7 @@
      PROJECT 02: UNREAL QUARTER-VIEW
      ============================================================ -->
 <section id="unreal" class="work-section">
-  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
+  <div class="chapter-sticky">
     <div class="section-inner wide">
       <div class="chapter-header">
         <span class="chapter-num">02 /</span>
@@ -312,7 +277,7 @@
                 <tr><td>Swing / Slam</td><td>근접</td><td>기본 근접 공격 콤보</td></tr>
                 <tr><td>Charge</td><td>중거리</td><td>돌진 후 텔레포트 연계</td></tr>
                 <tr><td>Orb Shoot</td><td>원거리</td><td>마법 투사체 2연발</td></tr>
-                <tr><td>Blackhole</td><td>원거리</td><td>광역 흡인 + 데미지</td></tr>
+                <tr><td>Blackhole</td><td>원거리</td><td>유도 투사체 + 데미지</td></tr>
                 <tr><td>Summon</td><td>자체</td><td>HP 페이즈 시 미니언 6체 소환</td></tr>
               </tbody>
             </table>
@@ -372,7 +337,7 @@
           </figure>
           <figure style="margin:0;">
             <img src="image/unbound/GT_Charge.gif" alt="보스 Charge 돌진 공격" style="width:100%; border-radius:4px;">
-            <figcaption class="attack-caption"><strong>Charge</strong> - 중거리 돌진. 바닥 방향 지시자로 돌진 경로를 표시하고 돌진 후 텔레포트로 연계.</figcaption>
+            <figcaption class="attack-caption"><strong>Charge</strong> - 중거리 돌진. 바닥 방향 지시자로 돌진 경로를 표시하고 돌진.</figcaption>
           </figure>
           <figure style="margin:0;">
             <img src="image/unbound/GT_Smash.gif" alt="보스 Smash 내려찍기" style="width:100%; border-radius:4px;">
@@ -380,7 +345,7 @@
           </figure>
           <figure style="margin:0;">
             <img src="image/unbound/GT_Magic.gif" alt="보스 RangeAttack 원거리 공격" style="width:100%; border-radius:4px;">
-            <figcaption class="attack-caption"><strong>RangeAttack (Orb / Blackhole)</strong> - 원거리 공격. Orb 투사체 발사 또는 블랙홀로 플레이어를 흡인.</figcaption>
+            <figcaption class="attack-caption"><strong>RangeAttack (Orb / Blackhole)</strong> - 원거리 공격. Orb 투사체 발사 또는 유도 투사체 발사.</figcaption>
           </figure>
         </div>
       </div>
@@ -395,8 +360,7 @@
           <div class="summon-desc">
             <p class="attack-caption" style="margin:0 0 0.6rem;"><strong>Summon</strong></p>
             <p class="attack-caption" style="margin:0 0 0.5rem;">HP 임계치 이하로 진입하면 텔레포트 후 Skeleton Knight + Archer 미니언을 최대 <strong>6체</strong> 소환한다.</p>
-            <p class="attack-caption" style="margin:0 0 0.5rem;">격노 콤보 (<code>BTD_Boss_HP</code> 트리거): Teleport &rarr; Summon x6 &rarr; Orb Shoot &rarr; Blackhole 를 연속 실행.</p>
-            <p class="attack-caption" style="margin:0;">소환 직후 본체는 속도가 상승하며, 미니언이 플레이어를 포위하는 동안 원거리 공격으로 압박한다.</p>
+            <p class="attack-caption" style="margin:0;"> 1vs1의 단조로운 패턴을 피하기 위해 미니언을 소환하고 원거리 공격으로 압박을 한다.</p>
           </div>
         </div>
       </div>
@@ -408,43 +372,27 @@
     <div class="section-inner wide">
       <div class="work-sub-header">
         <span class="work-sub-label">구현 상세</span>
-        <h3 class="work-sub-title">플레이어 Blueprint (ET_TopDown_Player)</h3>
+        <h3 class="work-sub-title">플레이어 조작과 전투</h3>
       </div>
-      <p class="proj-body">Enhanced Input으로 이동·공격·구르기·상호작용 4가지 입력을 처리하고, 3단계 콤보 공격·구르기·피격 반응 등 전투 로직을 Blueprint로 구현. NPC 대화, 게임오버 UI 연동까지 플레이어 관련 로직 전반을 담당한다.</p>
+      <p class="proj-body">이동, 공격, 구르기, NPC 대화까지 플레이어가 직접 조작하는 동작 전체를 Blueprint로 구현했다. 게임오버 화면 연결도 함께 담당했다.</p>
 
       <div class="work-two-col" style="margin-top:1.5rem;">
         <div class="work-col-text">
           <div class="work-sub-header" style="margin-top:0;">
-            <span class="work-sub-label">입력 &amp; 전투</span>
+            <span class="work-sub-label">플레이어가 할 수 있는 것</span>
           </div>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>입력 액션</th><th>기능</th><th>연결 에셋</th></tr>
+                <tr><th>동작</th><th>설명</th></tr>
               </thead>
               <tbody>
-                <tr><td>IA_CH_MOVE</td><td>이동</td><td>AddMovementInput</td></tr>
-                <tr><td>IA_CH_ATTACK</td><td>콤보 공격</td><td>AM_Combo1 → AM_Combo2 → AM_Combo3</td></tr>
-                <tr><td>IA_CH_ROLL</td><td>구르기 회피</td><td>RollAnim_Montage</td></tr>
-                <tr><td>IA_CH_USE</td><td>NPC 상호작용</td><td>BPI_Dialogue / WB_TalkBalloon</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="work-sub-header" style="margin-top:1.5rem;">
-            <span class="work-sub-label">주요 기능</span>
-          </div>
-          <div class="data-table">
-            <table>
-              <thead>
-                <tr><th>기능</th><th>설명</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>3단계 콤보</td><td>Combo1→2→3 순서로 몽타주 재생. 타이밍 내 입력 시 다음 단계로 연계.</td></tr>
-                <tr><td>FindNearestEnemy</td><td>공격 시 가장 가까운 적을 자동 타겟팅.</td></tr>
-                <tr><td>Motion Warping</td><td>AddOrUpdateWarpTargetFromLocation으로 공격 중 타겟 방향으로 위치·회전 보정.</td></tr>
-                <tr><td>피격 처리</td><td>AnyDamage 이벤트 수신. Hit 리액션 몽타주(Dk_hit1~3) 및 Niagara 히트 이펙트 재생.</td></tr>
-                <tr><td>에어본 / 스턴</td><td>AM_airborne, Stun Montage로 CC(군중 제어) 상태 처리.</td></tr>
-                <tr><td>구르기</td><td>IA_CH_ROLL 입력 시 RollAnim_Montage 재생 및 이동 속도 조정.</td></tr>
+                <tr><td>이동</td><td>입력한 방향으로 캐릭터가 움직인다.</td></tr>
+                <tr><td>3단 콤보 공격</td><td>공격 버튼을 타이밍에 맞춰 연속으로 누르면 1타, 2타, 3타로 이어진다.</td></tr>
+                <tr><td>자동 조준</td><td>공격하면 가장 가까운 적을 찾아 그쪽으로 몸을 돌리며 붙는다. 방향을 정확히 맞추지 않아도 공격이 빗나가지 않는다.</td></tr>
+                <tr><td>구르기</td><td>적의 공격을 피하는 회피 동작.</td></tr>
+                <tr><td>피격 반응</td><td>맞으면 움찔하는 모션과 타격 이펙트가 나온다. 강한 공격에는 공중에 뜨거나 기절한다.</td></tr>
+                <tr><td>NPC 대화</td><td>NPC 앞에서 상호작용 키를 누르면 말풍선으로 대화가 열린다.</td></tr>
               </tbody>
             </table>
           </div>
@@ -452,11 +400,11 @@
         <div class="work-col-media" style="display:flex; flex-direction:column; gap:1rem; position:static;">
           <figure style="margin:0;">
             <img src="image/unbound/PC_BP.png" alt="플레이어 Blueprint - 전투 로직" style="width:100%; border-radius:4px;">
-            <figcaption style="font-size:0.75rem; color:var(--c-muted, #888); margin-top:0.5rem;">ET_TopDown_Player EventGraph - 3단계 콤보 공격, Motion Warping, 피격 처리</figcaption>
+            <figcaption style="font-size:0.75rem; color:var(--c-muted, #888); margin-top:0.5rem;">플레이어 Blueprint - 콤보 공격, 자동 조준, 피격 반응</figcaption>
           </figure>
           <figure style="margin:0;">
             <img src="image/unbound/PC_BP2.png" alt="플레이어 Blueprint - 이동 및 인터랙션 로직" style="width:100%; border-radius:4px;">
-            <figcaption style="font-size:0.75rem; color:var(--c-muted, #888); margin-top:0.5rem;">ET_TopDown_Player EventGraph - 이동 입력, 구르기, NPC 대화(BPI_Dialogue) 연동</figcaption>
+            <figcaption style="font-size:0.75rem; color:var(--c-muted, #888); margin-top:0.5rem;">플레이어 Blueprint - 이동, 구르기, NPC 대화</figcaption>
           </figure>
         </div>
       </div>
@@ -468,7 +416,7 @@
      PROJECT 03: FARMQUEST
      ============================================================ -->
 <section id="farmquest" class="work-section">
-  <div class="chapter-sticky" style="position:sticky;top:3.7rem;z-index:50;background:var(--bg);">
+  <div class="chapter-sticky">
     <div class="section-inner wide">
       <div class="chapter-header">
         <span class="chapter-num">03 /</span>
@@ -482,11 +430,11 @@
     <div class="section-inner wide">
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">생성형 AI 툴을 활용한 게임 개발 파이프라인 실험 및 데이터 기반 퀘스트 시스템 설계 습작. 이미지, 사운드, 3D 모델, 코드 작업 전반에 AI 툴을 적용했다.</p>
-          <p class="proj-body">전 직장에서 퀘스트와 대화 데이터를 다루며 겪은 문제를 직접 설계해 보는 것이 목표였다. 기획자가 코드를 건드리지 않고 퀘스트를 추가하고 수정할 수 있는 구조를 만드는 데 초점을 맞췄다.</p>
+          <p class="proj-body">AI 툴로 게임을 만들어 보는 실험이자, 퀘스트 시스템을 직접 설계해 본 개인 프로젝트다. 이미지, 사운드, 3D 모델, 코드 작업에 AI 툴을 활용했다.</p>
+          <p class="proj-body">전 직장에서 퀘스트와 대화 데이터를 다루며 겪은 불편을 직접 풀어보는 것이 목표였다. 핵심은 기획자가 코드를 건드리지 않고도 퀘스트를 추가하고 고칠 수 있게 만드는 것이다.</p>
           <div class="design-intent">
             <div class="intent-label">설계 원칙</div>
-            <p>퀘스트·대화·캐릭터를 각각 독립된 JSON으로 분리하고, 서로를 ID로만 참조하게 했다. 셋 중 하나를 고쳐도 나머지를 건드릴 필요가 없고, 새 퀘스트를 넣는 작업이 코드 수정이 아니라 데이터 추가가 된다.</p>
+            <p>퀘스트, 대화, 캐릭터 정보를 각각 별도 파일(JSON)로 나누고, 서로는 이름표(ID)로만 가리키게 했다. 그래서 하나를 고쳐도 나머지는 그대로 두면 되고, 새 퀘스트를 넣을 때는 코드를 고치는 대신 파일에 항목 하나를 추가하면 된다.</p>
           </div>
         </div>
         <div class="work-col-media" style="position:static;">
@@ -530,24 +478,25 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">퀘스트 데이터를 JSON으로 구조화해 기획과 구현을 분리했다. 퀘스트 ID, NPC 참조, 시작 조건, 목표 단계, 보상까지 모든 정보를 데이터로 관리한다.</p>
+          <p class="proj-body">퀘스트 하나에 필요한 정보를 한 묶음으로 정리했다. 누가 주는지, 언제 받을 수 있는지, 무엇을 해야 하는지, 보상은 무엇인지가 모두 데이터에 들어 있다. 오른쪽은 실제 데이터인 감자 스튜 퀘스트다.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>필드</th><th>타입</th><th>설명</th></tr>
+                <tr><th>정하는 것</th><th>감자 스튜 퀘스트</th><th>필드</th></tr>
               </thead>
               <tbody>
-                <tr><td>id</td><td>string</td><td>퀘스트 고유 ID</td></tr>
-                <tr><td>titleId</td><td>string</td><td>로케일 시스템 참조 제목 ID</td></tr>
-                <tr><td>providingNPCId</td><td>string</td><td>퀘스트를 제공하는 NPC ID</td></tr>
-                <tr><td>completionNPCId</td><td>string</td><td>퀘스트 완료를 처리하는 NPC ID</td></tr>
-                <tr><td>startConditions</td><td>array</td><td>퀘스트 시작 조건 목록</td></tr>
-                <tr><td>objectives</td><td>array</td><td>퀘스트의 목표 단계 리스트</td></tr>
-                <tr><td>rewards</td><td>array</td><td>퀘스트 완료 보상 목록</td></tr>
+                <tr><td>퀘스트 이름표</td><td>감자 스튜 퀘스트 1</td><td><code>id</code></td></tr>
+                <tr><td>화면에 보이는 제목</td><td>번역 파일에서 불러옴</td><td><code>titleId</code></td></tr>
+                <tr><td>퀘스트를 주는 NPC</td><td>로이</td><td><code>providingNPCId</code></td></tr>
+                <tr><td>완료 보고를 받는 NPC</td><td>로이</td><td><code>completionNPCId</code></td></tr>
+                <tr><td>받을 수 있는 조건</td><td>없음 (바로 받을 수 있음)</td><td><code>startConditions</code></td></tr>
+                <tr><td>받을 때 / 완료할 때 대화</td><td>감자 스튜 대화 1번 / 5번</td><td><code>startDialogueId</code><br><code>completionDialogueId</code></td></tr>
+                <tr><td>해야 할 일</td><td>순서대로 진행되는 목표 목록</td><td><code>objectives</code></td></tr>
+                <tr><td>보상</td><td>아이템 2종, 각 100개</td><td><code>rewards</code></td></tr>
               </tbody>
             </table>
           </div>
-          <p class="proj-body">startConditions로 선행 퀘스트 완료, 플래그 값 검사, 아이템 보유 여부 등 복수 조건 설정 가능. objectives는 순차 진행되며, 지역 도달(EnterArea), 대화 완료(CompleteDialogue), 적 처치(DefeatEnemies), 아이템 수집(CollectItems) 네 가지 타입 지원.</p>
+          <p class="proj-body">받을 수 있는 조건에는 "이전 퀘스트를 끝냈는가", "이야기가 특정 단계까지 진행됐는가", "특정 아이템을 갖고 있는가"를 여러 개 함께 걸 수 있다. 해야 할 일은 순서대로 진행되며 장소 가기, 대화 끝내기, 적 처치, 아이템 모으기 네 종류를 쓸 수 있다.</p>
         </div>
         <div class="work-col-media" style="position:static;">
           <div class="code-block">
@@ -579,23 +528,23 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">캐릭터 간 텍스트 대화를 데이터로 제어한다. 캐릭터 이름, 초상화(감정), 음성, 애니메이션 연출을 각 대사 라인별로 설정 가능하며, 대화 종료 시 플래그 변경을 통해 스토리 및 퀘스트 진행 제어.</p>
+          <p class="proj-body">대사 한 줄마다 누가, 어떤 표정과 목소리로, 어떤 동작을 하며 말할지를 정한다. 대사가 끝날 때 이야기 진행 상황(플래그, 아래에서 설명)을 바꿔 다음 이야기로 넘길 수도 있다.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>필드</th><th>타입</th><th>설명</th></tr>
+                <tr><th>정하는 것</th><th>로이의 기본 대사</th><th>필드</th></tr>
               </thead>
               <tbody>
-                <tr><td>textId</td><td>string</td><td>텍스트 대사 로케일 ID</td></tr>
-                <tr><td>characterId</td><td>string</td><td>대사를 하는 캐릭터 ID</td></tr>
-                <tr><td>animation</td><td>string</td><td>캐릭터 애니메이션</td></tr>
-                <tr><td>expression</td><td>string</td><td>캐릭터 초상화 ID</td></tr>
-                <tr><td>voice</td><td>string</td><td>캐릭터 음성 ID</td></tr>
-                <tr><td>flagActions</td><td>array</td><td>대화 종료 후 변경할 플래그</td></tr>
+                <tr><td>말하는 캐릭터</td><td>로이</td><td><code>characterId</code></td></tr>
+                <tr><td>대사 내용</td><td>번역 파일에서 불러옴</td><td><code>textId</code></td></tr>
+                <tr><td>초상화 표정</td><td>평상시</td><td><code>expression</code></td></tr>
+                <tr><td>목소리</td><td>말하기 음성</td><td><code>voice</code></td></tr>
+                <tr><td>캐릭터 동작</td><td>말하는 모션</td><td><code>animation</code></td></tr>
+                <tr><td>대사 후 바꿀 진행 상황</td><td>감자 스튜 진행 단계를 7로</td><td><code>flagActions</code></td></tr>
               </tbody>
             </table>
           </div>
-          <p class="proj-body">flagActions는 네 가지 액션 타입 지원: 플래그 설정(0), 값 증가(1), 플래그 토글(2), 플래그 제거(3). 대화만으로도 퀘스트 상태 전환, NPC 행동 변화 등 유연하게 제어 가능.</p>
+          <p class="proj-body">진행 상황은 값 정하기, 값 올리기, 켜고 끄기, 지우기 네 가지 방법으로 바꿀 수 있다. 그래서 대화만으로도 퀘스트를 다음 단계로 넘기거나 NPC의 반응을 바꿀 수 있다.</p>
         </div>
         <div class="work-col-media" style="position:static;">
           <div class="code-block">
@@ -632,20 +581,20 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">NPC의 표정, 음성, 기본 대화, 플래그 조건부 대화를 데이터로 관리한다. dialogueConditions를 통해 플래그 값에 따라 NPC 재생 대화를 자동 전환, 별도 코드 없이 NPC의 상태 변화를 표현한다.</p>
+          <p class="proj-body">NPC마다 이름, 인사말, 표정과 목소리, 그리고 상황별로 어떤 대화를 할지 정리했다. 이야기 진행에 따라 NPC가 하는 말이 자동으로 바뀌기 때문에, 코드를 따로 짜지 않아도 NPC가 이야기에 반응한다.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>필드</th><th>타입</th><th>설명</th></tr>
+                <tr><th>정하는 것</th><th>NPC 로이</th><th>필드</th></tr>
               </thead>
               <tbody>
-                <tr><td>characterId</td><td>string</td><td>캐릭터 고유 ID</td></tr>
-                <tr><td>nameKey</td><td>string</td><td>이름의 로케일 키</td></tr>
-                <tr><td>defaultDialogueId</td><td>string</td><td>조건 없을 때 기본 재생 대화 ID</td></tr>
-                <tr><td>greetingLocaleId</td><td>string</td><td>NPC에게 말 걸었을 때 인사말 로케일</td></tr>
-                <tr><td>expressions</td><td>array</td><td>감정 목록 (key + address)</td></tr>
-                <tr><td>voices</td><td>array</td><td>음성 목록 (key + address)</td></tr>
-                <tr><td>dialogueConditions</td><td>array</td><td>플래그 값에 따라 재생될 대화 조건</td></tr>
+                <tr><td>캐릭터 이름표</td><td>로이</td><td><code>characterId</code></td></tr>
+                <tr><td>화면에 보이는 이름</td><td>번역 파일에서 불러옴</td><td><code>nameKey</code></td></tr>
+                <tr><td>말 걸었을 때 인사말</td><td>번역 파일에서 불러옴</td><td><code>greetingLocaleId</code></td></tr>
+                <tr><td>평소에 하는 대화</td><td>로이 기본 대화</td><td><code>defaultDialogueId</code></td></tr>
+                <tr><td>표정 목록</td><td>평상시, 생각 중 (각각 이미지 파일과 연결)</td><td><code>expressions</code></td></tr>
+                <tr><td>목소리 목록</td><td>말하기 (음성 파일과 연결)</td><td><code>voices</code></td></tr>
+                <tr><td>상황별 대화</td><td>감자 스튜 진행 단계가 1이면 감자 스튜 대화 10번</td><td><code>dialogueConditions</code></td></tr>
               </tbody>
             </table>
           </div>
@@ -683,38 +632,38 @@
     <div class="section-inner wide">
       <div class="work-sub-header">
         <span class="work-sub-label">동작 흐름</span>
-        <h3 class="work-sub-title">플래그 하나로 연결되는 구조</h3>
+        <h3 class="work-sub-title">세 데이터가 연결되는 방식</h3>
       </div>
-      <p class="proj-body" style="margin-top:1rem;">퀘스트·대화·캐릭터 데이터는 서로를 직접 호출하지 않는다. 대신 <code>플래그</code>라는 공용 상태값을 사이에 두고 간접적으로 연결된다. 위 예시의 <code>potatostew_phase</code>가 그 역할을 한다.</p>
+      <p class="proj-body" style="margin-top:1rem;">퀘스트, 대화, 캐릭터 데이터는 서로를 직접 부르지 않는다. 그 사이에 <strong>플래그</strong>라는 공용 메모를 둔다. 플래그는 "이야기가 지금 어디까지 진행됐는지"를 적어두는 값이다. 예시의 <code>potatostew_phase</code>는 감자 스튜 이야기의 진행 단계를 숫자로 기억한다.</p>
 
       <div class="data-table" style="margin-top:1.25rem;">
         <table>
           <thead>
-            <tr><th>순서</th><th>동작</th><th>참조하는 데이터</th></tr>
+            <tr><th>순서</th><th>게임에서 일어나는 일</th><th>쓰이는 데이터</th></tr>
           </thead>
           <tbody>
-            <tr><td>1</td><td>플레이어가 NPC에게 말을 건다</td><td>캐릭터 데이터 <code>npc_roy</code></td></tr>
-            <tr><td>2</td><td><code>dialogueConditions</code>의 플래그 조건을 먼저 확인한다</td><td>캐릭터 &rarr; 플래그</td></tr>
-            <tr><td>3</td><td>조건이 맞으면 해당 대화를, 아니면 <code>defaultDialogueId</code>를 재생</td><td>대화 데이터</td></tr>
-            <tr><td>4</td><td>대화 라인의 <code>flagActions</code>가 플래그 값을 변경</td><td>대화 &rarr; 플래그</td></tr>
-            <tr><td>5</td><td>변경된 플래그가 다음 대화 분기와 퀘스트 <code>startConditions</code> 판정에 반영</td><td>플래그 &rarr; 캐릭터 / 퀘스트</td></tr>
+            <tr><td>1</td><td>플레이어가 로이에게 말을 건다</td><td>캐릭터</td></tr>
+            <tr><td>2</td><td>게임이 플래그를 보고, 지금 진행 단계에 맞는 대화가 있는지 찾는다</td><td>캐릭터 &rarr; 플래그</td></tr>
+            <tr><td>3</td><td>맞는 대화가 있으면 그 대화를, 없으면 평소 대화를 보여준다</td><td>대화</td></tr>
+            <tr><td>4</td><td>대사가 끝나면 플래그 값을 바꾼다 (예: 진행 단계를 7로)</td><td>대화 &rarr; 플래그</td></tr>
+            <tr><td>5</td><td>바뀐 값에 따라 다음에 말 걸 때의 대화와 새 퀘스트를 받을 수 있는지가 달라진다</td><td>플래그 &rarr; 캐릭터 / 퀘스트</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="design-intent" style="margin-top:1.5rem;">
         <div class="intent-label">이렇게 나눈 이유</div>
-        <p>NPC가 스토리 진행에 따라 다른 말을 하게 만들 때, 보통은 조건 분기를 코드에 넣게 된다. 플래그를 사이에 두면 그 판단이 전부 데이터 안에서 끝난다. 대화 한 줄로 퀘스트 상태를 바꾸거나 NPC의 반응을 바꾸는 것이 기획자 작업 범위 안에 들어온다.</p>
+        <p>NPC가 이야기 진행에 따라 다른 말을 하게 하려면, 보통은 프로그래머가 코드에 조건을 넣어야 한다. 이 구조에서는 게임이 플래그 값만 보고 판단하므로, 기획자가 데이터 파일만 고쳐서 NPC의 반응과 퀘스트 진행을 바꿀 수 있다.</p>
       </div>
 
       <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">로컬라이즈 전제</div>
-        <p>표시되는 모든 문자열은 <code>titleId</code>, <code>textId</code>, <code>nameKey</code>처럼 로케일 ID로만 들어간다. 데이터에 한국어 원문을 직접 넣지 않았기 때문에, 언어를 추가할 때 퀘스트·대화 구조를 다시 건드릴 필요가 없다.</p>
+        <div class="intent-label">다른 언어 추가를 고려한 설계</div>
+        <p>데이터에는 한국어 문장을 직접 쓰지 않고, 번역 파일에서 찾아올 ID만 넣었다. 영어 같은 다른 언어를 추가할 때는 번역 파일만 늘리면 되고, 퀘스트와 대화 데이터는 고칠 필요가 없다.</p>
       </div>
 
       <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">퀘스트 제공자와 완료자 분리</div>
-        <p><code>providingNPCId</code>와 <code>completionNPCId</code>를 따로 둔 것은 &ldquo;A에게 받아 B에게 보고하는&rdquo; 심부름 구조를 데이터만으로 만들기 위해서다. 예시의 감자 스튜 퀘스트는 둘 다 <code>npc_roy</code>지만, 값만 바꾸면 다른 NPC로 넘기는 퀘스트가 된다.</p>
+        <div class="intent-label">주는 NPC와 보고받는 NPC를 따로 둔 이유</div>
+        <p>"A에게 받아서 B에게 보고하는" 심부름 퀘스트를 코드 없이 만들기 위해서다. 감자 스튜 퀘스트는 둘 다 로이지만, 보고받는 NPC만 바꾸면 다른 NPC에게 보고하는 퀘스트가 된다.</p>
       </div>
     </div>
   </article>

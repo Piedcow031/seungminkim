@@ -1191,18 +1191,59 @@ img[src*="/unbound/PC_BP"] {
   position: sticky;
   top: 3.7rem; /* below fixed nav */
   z-index: 50;
-  background: var(--bg);
+  background: var(--bg-warm);
+  border-top: 4px solid var(--accent);
+  border-bottom: 1px solid var(--rule-heavy);
 }
 
 .chapter-sticky .section-inner {
-  padding-top: 1rem;
+  padding-top: 0.9rem;
   padding-bottom: 0;
 }
 
 .chapter-sticky .chapter-header {
   margin-bottom: 0;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--rule-heavy);
+  padding-bottom: 0.9rem;
+  border-bottom: none;
+}
+
+/* Project title has to outrank the sub-titles inside it. */
+.chapter-sticky .chapter-label {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.chapter-sticky .chapter-num {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Per-project palette. Each section re-scopes the tokens, so accents,
+   alt-block backgrounds and the sticky band all follow the project.
+   Colours sampled from each project's thumbnail. */
+#wbb {
+  --bg-warm:  #E3ECEF;
+  --bg-inset: #D3E0E5;
+}
+
+#unreal {
+  --accent:    #8A2E2A;
+  --accent-lt: #B24A40;
+  --bg-warm:   #F1E6E3;
+  --bg-inset:  #E6D6D2;
+}
+
+#farmquest {
+  --accent:    #3E6B34;
+  --accent-lt: #5C8C4E;
+  --bg-warm:   #E6EDE1;
+  --bg-inset:  #D6E2CF;
+}
+
+/* Space between projects so one ends before the next begins. */
+.work-section + .work-section {
+  margin-top: clamp(4rem, 9vw, 8rem);
 }
 
 .chapter-sticky .back-link {
@@ -1282,7 +1323,7 @@ img[src*="/unbound/PC_BP"] {
 
 .video-chapter-item:hover {
   border-color: var(--accent);
-  background: rgba(30, 78, 102, 0.06);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
 }
 
 .video-chapter-item:hover .chapter-name {
@@ -1339,7 +1380,7 @@ img[src*="/unbound/PC_BP"] {
 
 .work-sub-title {
   font-family: var(--font-display);
-  font-size: var(--fs-h2);
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
   font-weight: 700;
   color: var(--text);
   line-height: 1.3;
@@ -1383,7 +1424,7 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .data-table th {
-  background: rgba(30, 78, 102, 0.08);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
