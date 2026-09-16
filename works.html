@@ -430,11 +430,11 @@
     <div class="section-inner wide">
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">AI 툴로 게임을 만들어 보는 실험이자, 퀘스트 시스템을 직접 설계해 본 개인 프로젝트다. 이미지, 사운드, 3D 모델, 코드 작업에 AI 툴을 활용했다.</p>
-          <p class="proj-body">전 직장에서 퀘스트와 대화 데이터를 다루며 겪은 불편을 직접 풀어보는 것이 목표였다. 핵심은 기획자가 코드를 건드리지 않고도 퀘스트를 추가하고 고칠 수 있게 만드는 것이다.</p>
+          <p class="proj-body">AI 개발과 퀘스트 기획의 습작을 위해 만든 프로젝트. 생성형 AI 툴로 이미지, 사운드, 3D 모델, 코드 작성 등 게임 개발 파이프라인 전반을 실험하고, 퀘스트 시스템과 대화 시스템을 데이터 중심으로 구조화하는 연습을 했다.</p>
+          <p class="proj-body">전 직장에서 퀘스트와 대화 데이터를 다루며 겪은 문제를 직접 설계해 보는 것이 목표였다. 기획자가 코드를 건드리지 않고 퀘스트를 추가하고 수정할 수 있는 구조를 만드는 데 초점을 맞췄다.</p>
           <div class="design-intent">
             <div class="intent-label">설계 원칙</div>
-            <p>퀘스트, 대화, 캐릭터 정보를 각각 별도 파일(JSON)로 나누고, 서로는 이름표(ID)로만 가리키게 했다. 그래서 하나를 고쳐도 나머지는 그대로 두면 되고, 새 퀘스트를 넣을 때는 코드를 고치는 대신 파일에 항목 하나를 추가하면 된다.</p>
+            <p>퀘스트, 대화, 캐릭터 데이터를 각각 JSON으로 분리하고 서로 ID로만 참조한다. 하나를 수정해도 나머지는 건드릴 필요가 없고, 새 퀘스트 추가는 코드 수정이 아닌 데이터 추가로 끝난다.</p>
           </div>
         </div>
         <div class="work-col-media" style="position:static;">
@@ -478,31 +478,32 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">퀘스트 하나에 필요한 정보를 한 묶음으로 정리했다. 누가 주는지, 언제 받을 수 있는지, 무엇을 해야 하는지, 보상은 무엇인지가 모두 데이터에 들어 있다. 오른쪽은 실제 데이터인 감자 스튜 퀘스트다.</p>
+          <p class="proj-body">퀘스트를 주는 NPC, 시작 조건, 목표, 보상 등 퀘스트에 필요한 정보를 데이터로 관리한다. 오른쪽은 실제 적용 데이터인 "진할머니의 감자스튜 레시피" 퀘스트.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>정하는 것</th><th>감자 스튜 퀘스트</th><th>필드</th></tr>
+                <tr><th>항목</th><th>설명</th><th>필드명</th></tr>
               </thead>
               <tbody>
-                <tr><td>퀘스트 이름표</td><td>감자 스튜 퀘스트 1</td><td><code>id</code></td></tr>
-                <tr><td>화면에 보이는 제목</td><td>번역 파일에서 불러옴</td><td><code>titleId</code></td></tr>
-                <tr><td>퀘스트를 주는 NPC</td><td>로이</td><td><code>providingNPCId</code></td></tr>
-                <tr><td>완료 보고를 받는 NPC</td><td>로이</td><td><code>completionNPCId</code></td></tr>
-                <tr><td>받을 수 있는 조건</td><td>없음 (바로 받을 수 있음)</td><td><code>startConditions</code></td></tr>
-                <tr><td>받을 때 / 완료할 때 대화</td><td>감자 스튜 대화 1번 / 5번</td><td><code>startDialogueId</code><br><code>completionDialogueId</code></td></tr>
-                <tr><td>해야 할 일</td><td>순서대로 진행되는 목표 목록</td><td><code>objectives</code></td></tr>
-                <tr><td>보상</td><td>아이템 2종, 각 100개</td><td><code>rewards</code></td></tr>
+                <tr><td>퀘스트 ID</td><td>퀘스트를 참조할 때 쓰이는 고유 ID</td><td><code>id</code></td></tr>
+                <tr><td>제목 / 설명</td><td>텍스트를 직접 넣지 않고 로케일 ID만 참조. 언어 설정에 따라 자동 출력</td><td><code>titleId</code><br><code>descriptionId</code></td></tr>
+                <tr><td>제공 NPC</td><td>시작 조건 달성 시 NPC 머리 위에 ! 표시, 대화에 임무 선택지 추가</td><td><code>providingNPCId</code></td></tr>
+                <tr><td>완료 NPC</td><td>모든 목표 완료 시 NPC 머리 위에 ? 표시, 대화에 임무 완료 선택지 추가</td><td><code>completionNPCId</code></td></tr>
+                <tr><td>시작 조건</td><td>여러 조건을 넣을 수 있고, 모두 충족하면 퀘스트 시작 가능</td><td><code>startConditions</code></td></tr>
+                <tr><td>수락 / 완료 대화</td><td>NPC 대화에서 임무를 선택하면 재생. 대화가 끝나면 퀘스트 시작 또는 완료</td><td><code>startDialogueId</code><br><code>completionDialogueId</code></td></tr>
+                <tr><td>목표</td><td>순서대로 진행. 모든 목표 완수 시 퀘스트 완료</td><td><code>objectives</code></td></tr>
+                <tr><td>보상</td><td>완료 대화가 끝나는 시점에 자동 지급</td><td><code>rewards</code></td></tr>
               </tbody>
             </table>
           </div>
-          <p class="proj-body">받을 수 있는 조건에는 "이전 퀘스트를 끝냈는가", "이야기가 특정 단계까지 진행됐는가", "특정 아이템을 갖고 있는가"를 여러 개 함께 걸 수 있다. 해야 할 일은 순서대로 진행되며 장소 가기, 대화 끝내기, 적 처치, 아이템 모으기 네 종류를 쓸 수 있다.</p>
+          <p class="proj-body">시작 조건은 선행 퀘스트 완료 여부, 플래그 값, 아이템 보유 수량 세 가지를 검사한다. 목표는 지역 도달, 대화 완료, 적 처치, 아이템 수집 네 가지 타입이 있다. 감자스튜 퀘스트는 마르타와 대화 &rarr; 밭으로 이동 &rarr; 잡초 4개 수집 &rarr; 마르타와 대화 &rarr; 로이에게 레시피 전달, 5단계로 구성했다.</p>
         </div>
         <div class="work-col-media" style="position:static;">
           <div class="code-block">
 <pre>{
   "id": "quest_potatostew_01",
   "titleId": "Quest_title_potatostew",
+  "descriptionId": "Quest_description_potatostew_01",
   "providingNPCId": "npc_roy",
   "completionNPCId": "npc_roy",
   "startConditions": [],
@@ -528,23 +529,23 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">대사 한 줄마다 누가, 어떤 표정과 목소리로, 어떤 동작을 하며 말할지를 정한다. 대사가 끝날 때 이야기 진행 상황(플래그, 아래에서 설명)을 바꿔 다음 이야기로 넘길 수도 있다.</p>
+          <p class="proj-body">캐릭터 간의 텍스트 대화를 출력한다. 대사 한 줄마다 캐릭터 초상화(감정), 음성, 애니메이션 연출을 지정하고, 대화 종료 시 플래그를 변경해 스토리와 퀘스트 진행을 제어한다.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>정하는 것</th><th>로이의 기본 대사</th><th>필드</th></tr>
+                <tr><th>항목</th><th>설명</th><th>필드명</th></tr>
               </thead>
               <tbody>
-                <tr><td>말하는 캐릭터</td><td>로이</td><td><code>characterId</code></td></tr>
-                <tr><td>대사 내용</td><td>번역 파일에서 불러옴</td><td><code>textId</code></td></tr>
-                <tr><td>초상화 표정</td><td>평상시</td><td><code>expression</code></td></tr>
-                <tr><td>목소리</td><td>말하기 음성</td><td><code>voice</code></td></tr>
-                <tr><td>캐릭터 동작</td><td>말하는 모션</td><td><code>animation</code></td></tr>
-                <tr><td>대사 후 바꿀 진행 상황</td><td>감자 스튜 진행 단계를 7로</td><td><code>flagActions</code></td></tr>
+                <tr><td>대사</td><td>출력할 대사의 로케일 ID</td><td><code>textId</code></td></tr>
+                <tr><td>캐릭터</td><td>대사를 하고 있는 캐릭터</td><td><code>characterId</code></td></tr>
+                <tr><td>초상화</td><td>감정별 초상화 (idle, thinking 등)</td><td><code>expression</code></td></tr>
+                <tr><td>음성</td><td>출력할 캐릭터 음성</td><td><code>voice</code></td></tr>
+                <tr><td>애니메이션</td><td>대사 중 재생할 캐릭터 애니메이션</td><td><code>animation</code></td></tr>
+                <tr><td>플래그 변경</td><td>대화 종료 후 변경할 플래그</td><td><code>flagActions</code></td></tr>
               </tbody>
             </table>
           </div>
-          <p class="proj-body">진행 상황은 값 정하기, 값 올리기, 켜고 끄기, 지우기 네 가지 방법으로 바꿀 수 있다. 그래서 대화만으로도 퀘스트를 다음 단계로 넘기거나 NPC의 반응을 바꿀 수 있다.</p>
+          <p class="proj-body">플래그 변경은 설정, 값 증가, 토글, 제거 네 가지. 예시의 로이 기본 대화는 종료 시 <code>potatostew_phase</code> 값을 7로 설정한다.</p>
         </div>
         <div class="work-col-media" style="position:static;">
           <div class="code-block">
@@ -581,20 +582,20 @@
       </div>
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">NPC마다 이름, 인사말, 표정과 목소리, 그리고 상황별로 어떤 대화를 할지 정리했다. 이야기 진행에 따라 NPC가 하는 말이 자동으로 바뀌기 때문에, 코드를 따로 짜지 않아도 NPC가 이야기에 반응한다.</p>
+          <p class="proj-body">NPC가 가지고 있는 표정 및 음성 에셋을 데이터로 관리하고, 인삿말과 기본 대화, 플래그 값에 따른 대화를 관리한다. 스토리 진행에 따른 NPC 대사 변화를 별도 코드 없이 데이터로 표현한다.</p>
           <div class="data-table">
             <table>
               <thead>
-                <tr><th>정하는 것</th><th>NPC 로이</th><th>필드</th></tr>
+                <tr><th>항목</th><th>설명</th><th>필드명</th></tr>
               </thead>
               <tbody>
-                <tr><td>캐릭터 이름표</td><td>로이</td><td><code>characterId</code></td></tr>
-                <tr><td>화면에 보이는 이름</td><td>번역 파일에서 불러옴</td><td><code>nameKey</code></td></tr>
-                <tr><td>말 걸었을 때 인사말</td><td>번역 파일에서 불러옴</td><td><code>greetingLocaleId</code></td></tr>
-                <tr><td>평소에 하는 대화</td><td>로이 기본 대화</td><td><code>defaultDialogueId</code></td></tr>
-                <tr><td>표정 목록</td><td>평상시, 생각 중 (각각 이미지 파일과 연결)</td><td><code>expressions</code></td></tr>
-                <tr><td>목소리 목록</td><td>말하기 (음성 파일과 연결)</td><td><code>voices</code></td></tr>
-                <tr><td>상황별 대화</td><td>감자 스튜 진행 단계가 1이면 감자 스튜 대화 10번</td><td><code>dialogueConditions</code></td></tr>
+                <tr><td>캐릭터 ID</td><td>대화 및 퀘스트의 NPC 참조에 사용</td><td><code>characterId</code></td></tr>
+                <tr><td>이름</td><td>이름의 로케일 키</td><td><code>nameKey</code></td></tr>
+                <tr><td>인삿말</td><td>NPC에게 말을 걸었을 때 표시할 문구</td><td><code>greetingLocaleId</code></td></tr>
+                <tr><td>기본 대화</td><td>조건에 맞는 대화가 없을 때 재생할 대화</td><td><code>defaultDialogueId</code></td></tr>
+                <tr><td>표정</td><td>감정 key와 에셋 address 목록</td><td><code>expressions</code></td></tr>
+                <tr><td>음성</td><td>음성 key와 에셋 address 목록</td><td><code>voices</code></td></tr>
+                <tr><td>조건부 대화</td><td>플래그 값에 따라 재생할 대화</td><td><code>dialogueConditions</code></td></tr>
               </tbody>
             </table>
           </div>
@@ -632,38 +633,38 @@
     <div class="section-inner wide">
       <div class="work-sub-header">
         <span class="work-sub-label">동작 흐름</span>
-        <h3 class="work-sub-title">세 데이터가 연결되는 방식</h3>
+        <h3 class="work-sub-title">플래그로 연결되는 구조</h3>
       </div>
-      <p class="proj-body" style="margin-top:1rem;">퀘스트, 대화, 캐릭터 데이터는 서로를 직접 부르지 않는다. 그 사이에 <strong>플래그</strong>라는 공용 메모를 둔다. 플래그는 "이야기가 지금 어디까지 진행됐는지"를 적어두는 값이다. 예시의 <code>potatostew_phase</code>는 감자 스튜 이야기의 진행 단계를 숫자로 기억한다.</p>
+      <p class="proj-body" style="margin-top:1rem;">퀘스트, 대화, 캐릭터 데이터는 서로를 직접 호출하지 않고, 플래그를 사이에 두고 연결된다. 플래그는 스토리 진행 상태를 저장하는 값으로, 예시의 <code>potatostew_phase</code>가 감자스튜 퀘스트의 진행 단계를 저장한다.</p>
 
       <div class="data-table" style="margin-top:1.25rem;">
         <table>
           <thead>
-            <tr><th>순서</th><th>게임에서 일어나는 일</th><th>쓰이는 데이터</th></tr>
+            <tr><th>순서</th><th>동작</th><th>참조 데이터</th></tr>
           </thead>
           <tbody>
             <tr><td>1</td><td>플레이어가 로이에게 말을 건다</td><td>캐릭터</td></tr>
-            <tr><td>2</td><td>게임이 플래그를 보고, 지금 진행 단계에 맞는 대화가 있는지 찾는다</td><td>캐릭터 &rarr; 플래그</td></tr>
-            <tr><td>3</td><td>맞는 대화가 있으면 그 대화를, 없으면 평소 대화를 보여준다</td><td>대화</td></tr>
-            <tr><td>4</td><td>대사가 끝나면 플래그 값을 바꾼다 (예: 진행 단계를 7로)</td><td>대화 &rarr; 플래그</td></tr>
-            <tr><td>5</td><td>바뀐 값에 따라 다음에 말 걸 때의 대화와 새 퀘스트를 받을 수 있는지가 달라진다</td><td>플래그 &rarr; 캐릭터 / 퀘스트</td></tr>
+            <tr><td>2</td><td>현재 플래그 값에 맞는 조건부 대화가 있는지 확인한다</td><td>캐릭터 &rarr; 플래그</td></tr>
+            <tr><td>3</td><td>조건에 맞는 대화가 있으면 해당 대화를, 없으면 기본 대화를 재생한다</td><td>대화</td></tr>
+            <tr><td>4</td><td>대화가 끝나면 플래그 값을 변경한다</td><td>대화 &rarr; 플래그</td></tr>
+            <tr><td>5</td><td>변경된 플래그 값이 다음 대화와 퀘스트 시작 조건에 반영된다</td><td>플래그 &rarr; 캐릭터 / 퀘스트</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="design-intent" style="margin-top:1.5rem;">
         <div class="intent-label">이렇게 나눈 이유</div>
-        <p>NPC가 이야기 진행에 따라 다른 말을 하게 하려면, 보통은 프로그래머가 코드에 조건을 넣어야 한다. 이 구조에서는 게임이 플래그 값만 보고 판단하므로, 기획자가 데이터 파일만 고쳐서 NPC의 반응과 퀘스트 진행을 바꿀 수 있다.</p>
+        <p>NPC가 스토리 진행에 따라 다른 대사를 하게 하려면 보통 코드에 조건 분기를 넣어야 한다. 플래그를 사이에 두면 이 판단이 데이터 안에서 끝나기 때문에, 대화로 퀘스트 상태나 NPC 반응을 바꾸는 작업을 기획자가 직접 할 수 있다.</p>
       </div>
 
       <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">다른 언어 추가를 고려한 설계</div>
-        <p>데이터에는 한국어 문장을 직접 쓰지 않고, 번역 파일에서 찾아올 ID만 넣었다. 영어 같은 다른 언어를 추가할 때는 번역 파일만 늘리면 되고, 퀘스트와 대화 데이터는 고칠 필요가 없다.</p>
+        <div class="intent-label">로컬라이즈 고려</div>
+        <p>화면에 출력되는 텍스트는 모두 로케일 ID로만 참조하고, 데이터에 텍스트를 직접 넣지 않는다. 언어를 추가할 때 퀘스트와 대화 데이터는 수정할 필요가 없다.</p>
       </div>
 
       <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">주는 NPC와 보고받는 NPC를 따로 둔 이유</div>
-        <p>"A에게 받아서 B에게 보고하는" 심부름 퀘스트를 코드 없이 만들기 위해서다. 감자 스튜 퀘스트는 둘 다 로이지만, 보고받는 NPC만 바꾸면 다른 NPC에게 보고하는 퀘스트가 된다.</p>
+        <div class="intent-label">제공 NPC와 완료 NPC 분리</div>
+        <p>"A에게 받아서 B에게 전달하는" 퀘스트를 데이터만으로 만들기 위해 제공 NPC와 완료 NPC를 따로 두었다. 감자스튜 퀘스트는 둘 다 로이지만, 값만 바꾸면 다른 NPC에게 완료하는 퀘스트가 된다.</p>
       </div>
     </div>
   </article>
