@@ -34,19 +34,21 @@
    DESIGN TOKENS
    ============================================================ */
 :root {
-  --bg:        #F6F2EA;
-  --bg-warm:   #EDE6D8;
-  --bg-inset:  #E2D9C7;
+  /* Palette sampled from image/profile.webp: jacket/glass petrol blue,
+     sky teal, cool grey-white of the jacket stripe and ledge. */
+  --bg:        #F1F4F3;
+  --bg-warm:   #E4EBEA;
+  --bg-inset:  #D5DFDF;
 
-  --text:      #201D18;
-  --text-mid:  #4B453B;
-  --text-dim:  #8C8371;
+  --text:      #16222A;
+  --text-mid:  #3C4B53;
+  --text-dim:  #74858B;
 
-  --accent:    #9A3A1E;
-  --accent-lt: #C15A34;
+  --accent:    #1E4E66;
+  --accent-lt: #3A7F95;
 
-  --rule:       rgba(32,29,24,0.12);
-  --rule-heavy: rgba(32,29,24,0.35);
+  --rule:       rgba(22,34,42,0.12);
+  --rule-heavy: rgba(22,34,42,0.35);
 
   --fs-hero:  clamp(3rem, 7.5vw, 6.25rem);
   --fs-h1:    clamp(2.2rem, 5vw, 4rem);
@@ -164,7 +166,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem var(--page-pad);
-  background: rgba(246,242,234,0.92);
+  background: rgba(241,244,243,0.92);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-bottom: 1px solid transparent;
@@ -1280,7 +1282,7 @@ img[src*="/unbound/PC_BP"] {
 
 .video-chapter-item:hover {
   border-color: var(--accent);
-  background: rgba(154, 58, 30, 0.06);
+  background: rgba(30, 78, 102, 0.06);
 }
 
 .video-chapter-item:hover .chapter-name {
@@ -1381,7 +1383,7 @@ img[src*="/unbound/PC_BP"] {
 }
 
 .data-table th {
-  background: rgba(154, 58, 30, 0.08);
+  background: rgba(30, 78, 102, 0.08);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   letter-spacing: 0.06em;
