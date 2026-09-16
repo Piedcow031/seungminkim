@@ -364,9 +364,9 @@
 
       <!-- 공격 패턴 gif -->
       <div class="work-sub-header" style="margin-top:2.5rem;">
-        <span class="work-sub-label">공격 패턴 시연</span>
+        <span class="work-sub-label">공격 패턴</span>
       </div>
-      <p class="proj-body">Behavior Tree에서 정의한 각 공격 패턴의 인게임 동작이다.</p>
+      <p class="proj-body">각 공격 패턴의 인게임 동작</p>
 
       <!-- 1행: 일반 전투 -->
       <div class="attack-phase-row" style="margin-top:1.25rem;">
@@ -405,45 +405,6 @@
             <p class="attack-caption" style="margin:0;">소환 직후 본체는 속도가 상승하며, 미니언이 플레이어를 포위하는 동안 원거리 공격으로 압박한다.</p>
           </div>
         </div>
-      </div>
-
-      <!-- 설계 의도 -->
-      <div class="work-sub-header" style="margin-top:3rem;">
-        <span class="work-sub-label">설계 의도</span>
-        <h3 class="work-sub-title">보스를 일반 몹과 다르게 만드는 것</h3>
-      </div>
-      <p class="proj-body" style="margin-top:1rem;">일반 스켈레톤(Knight, Archer)과 GhostKing은 같은 상태 기반 AI 골격을 공유한다. 보스를 보스로 만드는 것은 그 위에 얹은 세 가지다.</p>
-
-      <div class="data-table" style="margin-top:1.25rem;">
-        <table>
-          <thead>
-            <tr><th>항목</th><th>Knight / Archer</th><th>GhostKing</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>AI 상태</td><td>Passive / Investigating / Attacking</td><td>동일</td></tr>
-            <tr><td>순찰</td><td>가능</td><td>가능</td></tr>
-            <tr><td>텔레포트</td><td>불가</td><td>가능 (거리 재설정)</td></tr>
-            <tr><td>미니언 소환</td><td>불가</td><td>가능 (6체)</td></tr>
-            <tr><td>광역기</td><td>불가</td><td>Blackhole / Slam</td></tr>
-            <tr><td>HP 페이즈 전환</td><td>없음</td><td>있음 (BTD_Boss_HP)</td></tr>
-            <tr><td>쿨다운 관리</td><td>기본</td><td>공격별 개별 쿨다운</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="design-intent" style="margin-top:1.5rem;">
-        <div class="intent-label">거리 통제</div>
-        <p>일반 몹은 플레이어가 거리를 벌리면 그대로 끌려온다. GhostKing은 텔레포트와 돌진으로 거리를 스스로 되돌리기 때문에, 플레이어가 &ldquo;빼면서 때리는&rdquo; 안전한 패턴으로 전투를 끝낼 수 없다.</p>
-      </div>
-
-      <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">패턴 반복 방지</div>
-        <p>모든 공격 분기에 <code>BTDecorator_Cooldown</code>을 걸어 같은 공격이 연속으로 나오지 않게 했다. 데코레이터가 막힌 분기는 Selector가 자동으로 건너뛰므로, 별도 순서 제어 없이도 공격이 섞여 나온다.</p>
-      </div>
-
-      <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">격노 페이즈의 역할</div>
-        <p>소환되는 미니언은 근접 전위(Knight)와 원거리 후위(Archer)로 구성된다. 본체를 쫓던 플레이어가 갑자기 포위를 먼저 풀어야 하는 상황에 놓이고, 그 사이 본체는 원거리 공격으로 압박한다. 체력이 깎였다고 쉬워지는 것이 아니라 처리해야 할 문제가 바뀌는 구조다.</p>
       </div>
     </div>
   </article>
