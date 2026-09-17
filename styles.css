@@ -604,13 +604,38 @@ img {
   color: var(--bg);
 }
 
+/* The document is the deliverable, so its button outweighs the page's
+   other links instead of matching them. */
 .visual-btn--download {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.65rem;
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
+  padding: 1rem 1.9rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+/* Pulls the two downloads out of the body flow as one block. */
+.doc-cta {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  background: var(--bg-warm);
+  border-left: 3px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.doc-cta-text .work-sub-label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.doc-cta-text .proj-body {
+  font-size: 0.95rem;
 }
 
 .visual-btn--download:hover {
@@ -620,8 +645,8 @@ img {
 }
 
 .visual-btn__icon {
-  width: 1.15em;
-  height: 1.15em;
+  width: 1.45em;
+  height: 1.45em;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -827,10 +852,6 @@ img {
 
 .proj-meta--below-fold {
   margin-top: 2rem;
-}
-
-.visual-links--after-meta {
-  margin-top: 1.5rem;
 }
 
 .meta-item--full-row {
@@ -1632,6 +1653,11 @@ img[src*="/unbound/PC_BP"] {
   .contact-item {
     flex-direction: column;
     gap: 0.3rem;
+  }
+
+  .visual-btn--download {
+    width: 100%;
+    justify-content: center;
   }
 
   #footer {

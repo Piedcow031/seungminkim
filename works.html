@@ -430,12 +430,8 @@
     <div class="section-inner wide">
       <div class="work-two-col">
         <div class="work-col-text">
-          <p class="proj-body">AI 개발과 퀘스트 기획의 습작을 위해 만든 프로젝트. 생성형 AI 툴로 이미지, 사운드, 3D 모델, 코드 작성 등 게임 개발 파이프라인 전반을 실험하고, 퀘스트 시스템과 대화 시스템을 데이터 중심으로 구조화하는 연습을 했다.</p>
-          <p class="proj-body">전 직장에서 퀘스트와 대화 데이터를 다루며 겪은 문제를 직접 설계해 보는 것이 목표였다. 기획자가 코드를 건드리지 않고 퀘스트를 추가하고 수정할 수 있는 구조를 만드는 데 초점을 맞췄다.</p>
-          <div class="design-intent">
-            <div class="intent-label">설계 원칙</div>
-            <p>퀘스트, 대화, 캐릭터 데이터를 각각 JSON으로 분리하고 서로 ID로만 참조한다. 하나를 수정해도 나머지는 건드릴 필요가 없고, 새 퀘스트 추가는 코드 수정이 아닌 데이터 추가로 끝난다.</p>
-          </div>
+          <p class="proj-body">기획자가 코드를 건드리지 않고 퀘스트를 추가하고 수정할 수 있는 데이터 구조를 설계한 프로토타입. 퀘스트, 대화, 캐릭터를 각각 JSON으로 분리하고 플래그로 연결했다.</p>
+          <p class="proj-body">이미지, 사운드, 3D 모델, 코드 작성에는 생성형 AI 툴을 활용했다.</p>
         </div>
         <div class="work-col-media" style="position:static;">
           <div class="video-embed-work">
@@ -457,15 +453,21 @@
           <p class="meta-value meta-tools-text">Unity 6 · GPT Image · Adobe Photoshop · Meshy AI · ElevenLabs · Audacity · Cursor AI</p>
         </div>
       </div>
-      <div class="visual-links visual-links--after-meta">
-        <a href="docs/FarmQuest_소개문서.pdf" target="_blank" rel="noopener" download class="visual-btn visual-btn--download">
-          <img src="image/pdf.png" alt="" class="visual-btn__icon" width="20" height="20">
-          <span>소개 문서 &#x2913;</span>
-        </a>
-        <a href="attachment/FarmQuestData.zip" download class="visual-btn visual-btn--download">
-          <img src="image/zip.png" alt="" class="visual-btn__icon" width="20" height="20">
-          <span>퀘스트 데이터 &#x2913;</span>
-        </a>
+      <div class="doc-cta">
+        <div class="doc-cta-text">
+          <span class="work-sub-label">상세 자료</span>
+          <p class="proj-body">필드 정의와 타입, 시작 조건과 목표 타입, 퀘스트 흐름도와 페이즈 구성, 전체 대사는 소개 문서에 정리했다. 아래는 페이지에 담은 요약이다.</p>
+        </div>
+        <div class="visual-links">
+          <a href="docs/FarmQuest_소개문서.pdf" target="_blank" rel="noopener" download class="visual-btn visual-btn--download">
+            <img src="image/pdf.png" alt="" class="visual-btn__icon" width="20" height="20">
+            <span>소개 문서 (PDF, 23쪽) &#x2913;</span>
+          </a>
+          <a href="attachment/FarmQuestData.zip" download class="visual-btn visual-btn--download">
+            <img src="image/zip.png" alt="" class="visual-btn__icon" width="20" height="20">
+            <span>퀘스트 데이터 (JSON) &#x2913;</span>
+          </a>
+        </div>
       </div>
     </div>
   </article>
@@ -650,21 +652,6 @@
             <tr><td>5</td><td>변경된 플래그 값이 다음 대화와 퀘스트 시작 조건에 반영된다</td><td>플래그 &rarr; 캐릭터 / 퀘스트</td></tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="design-intent" style="margin-top:1.5rem;">
-        <div class="intent-label">이렇게 나눈 이유</div>
-        <p>NPC가 스토리 진행에 따라 다른 대사를 하게 하려면 보통 코드에 조건 분기를 넣어야 한다. 플래그를 사이에 두면 이 판단이 데이터 안에서 끝나기 때문에, 대화로 퀘스트 상태나 NPC 반응을 바꾸는 작업을 기획자가 직접 할 수 있다.</p>
-      </div>
-
-      <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">로컬라이즈 고려</div>
-        <p>화면에 출력되는 텍스트는 모두 로케일 ID로만 참조하고, 데이터에 텍스트를 직접 넣지 않는다. 언어를 추가할 때 퀘스트와 대화 데이터는 수정할 필요가 없다.</p>
-      </div>
-
-      <div class="design-intent" style="margin-top:1rem;">
-        <div class="intent-label">제공 NPC와 완료 NPC 분리</div>
-        <p>"A에게 받아서 B에게 전달하는" 퀘스트를 데이터만으로 만들기 위해 제공 NPC와 완료 NPC를 따로 두었다. 감자스튜 퀘스트는 둘 다 로이지만, 값만 바꾸면 다른 NPC에게 완료하는 퀘스트가 된다.</p>
       </div>
     </div>
   </article>
