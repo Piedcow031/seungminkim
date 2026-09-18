@@ -1,0 +1,6 @@
+# Allow every crawler, including AI/LLM bots (GPTBot, ClaudeBot, PerplexityBot,
+# Google-Extended, etc.), which are all covered by the wildcard below.
+User-agent: *
+Allow: /
+
+Sitemap: https://seungminkim.me/sitemap.xml
